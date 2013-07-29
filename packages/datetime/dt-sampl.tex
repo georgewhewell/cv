@@ -1,0 +1,172 @@
+%%
+%% This is file `dt-sampl.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% datetime.dtx  (with options: `dt-sampl.tex,package')
+%% 
+%%  datetime.dtx
+%%  Copyright 2010 Nicola Talbot
+%% 
+%%  This work may be distributed and/or modified under the
+%%  conditions of the LaTeX Project Public License, either version 1.3
+%%  of this license of (at your option) any later version.
+%%  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%%  and version 1.3 or later is part of all distributions of LaTeX
+%%  version 2005/12/01 or later.
+%% 
+%%  This work has the LPPL maintenance status `maintained'.
+%% 
+%%  The Current Maintainer of this work is Nicola Talbot.
+%% 
+%%  This work consists of the files datetime.dtx and datetime.ins and the derived files datetime.sty, dt-american.def, dt-austrian.def, dt-bahasa.def, dt-basque.def, dt-breton.def, dt-british.def, dt-bulgarian.def, dt-catalan.def, dt-croatian.def, dt-czech.def, dt-danish.def, dt-dutch.def, dt-esperanto.def, dt-estonian.def, dt-finnish.def, dt-french.def, dt-galician.def, dt-german.def, dt-greek.def, dt-hebrew.def, dt-icelandic.def, dt-irish.def, dt-italian.def, dt-latin.def, dt-lsorbian.def, dt-magyar.def, dt-naustrian.def, dt-ngerman.def, dt-norsk.def, dt-polish.def, dt-portuges.def, dt-romanian.def, dt-russian.def, dt-samin.def, dt-scottish.def, dt-serbian.def, dt-slovak.def, dt-slovene.def, dt-spanish.def, dt-swedish.def, dt-turkish.def, dt-UKenglish.def, dt-ukraineb.def, dt-USenglish.def, dt-usorbian.def, dt-welsh.def, dt-lang.tex, dt-sampl.tex, datetime.perl.
+%% 
+%% \CharacterTable
+%%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
+%%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
+%%   Digits        \0\1\2\3\4\5\6\7\8\9
+%%   Exclamation   \!     Double quote  \"     Hash (number) \#
+%%   Dollar        \$     Percent       \%     Ampersand     \&
+%%   Acute accent  \'     Left paren    \(     Right paren   \)
+%%   Asterisk      \*     Plus          \+     Comma         \,
+%%   Minus         \-     Point         \.     Solidus       \/
+%%   Colon         \:     Semicolon     \;     Less than     \<
+%%   Equals        \=     Greater than  \>     Question mark \?
+%%   Commercial at \@     Left bracket  \[     Backslash     \\
+%%   Right bracket \]     Circumflex    \^     Underscore    \_
+%%   Grave accent  \`     Left brace    \{     Vertical bar  \|
+%%   Right brace   \}     Tilde         \~}
+\documentclass[a4paper]{article}
+
+\usepackage{ifpdf}
+\usepackage{datetime}
+
+\ifpdf
+\pdfinfo{
+  /CreationDate (D:20040501215500Z)
+  /ModDate (D:\pdfcreationdate)
+}
+\fi
+
+\padzeroes[8]
+
+\newdateformat{dashdate}{\twodigit{\THEDAY}-\twodigit{\THEMONTH}-\THEYEAR}
+\newdateformat{usvardate}{\monthname[\THEMONTH]~\ordinaldate{\THEDAY}, \THEYEAR}
+\newdateformat{mydate}{\ifshowdow \dayofweekname{\THEDAY}{\THEMONTH}{\THEYEAR} \fi
+\THEDAY\ \monthname[\THEMONTH], \THEYEAR}
+\newdateformat{yyyymmdd}{\THEYEAR\twodigit{\THEMONTH}\twodigit{\THEDAY}}
+\newdateformat{ukvardate}{\THEDAY\ \monthname[\THEMONTH]\ \THEYEAR}
+
+\newtimeformat{dottime}{\twodigit{\THEHOUR}.\twodigit{\THEMINUTE}}
+\newtimeformat{dashtime12}{\THEHOURXII-\twodigit{\THEMINUTE}}
+\newtimeformat{hhmm}{\twodigit{\THEHOUR}\twodigit{\THEMINUTE}}
+
+\begin{document}
+
+\section{Date Formats}
+Default: \today.
+
+\begin{tabular}{ll}
+\bfseries Declaration & \bfseries\verb|\today|\\
+\verb|\longdate| & \longdate\today\\
+\verb|\shortdate| & \shortdate\today\\
+\verb|\yyyymmdddate| & \yyyymmdddate\today\\
+\verb|\ddmmyyyydate| & \ddmmyyyydate\today\\
+\verb|\dmyyyydate| & \dmyyyydate\today\\
+\verb|\ddmmyydate| & \ddmmyydate\today\\
+\verb|\dmyydate| & \dmyydate\today\\
+\verb|\textdate| & \textdate\today\\
+\verb|\usdate| & \usdate\today\\
+\verb|\mmddyyyydate| & \mmddyyyydate\today\\
+\verb|\mdyyyydate| & \mdyyyydate\today\\
+\verb|\mmddyydate| & \mmddyydate\today\\
+\verb|\mdyydate| & \mdyydate\today
+\end{tabular}
+
+\section{Time Formats}
+Default: \currenttime.
+
+\begin{tabular}{@{\ttfamily}ll}
+\bfseries\rmfamily Format & \bfseries \verb|\currenttime|\\
+hhmmsstime & \settimeformat{hhmmsstime}\currenttime\\
+xxivtime & \settimeformat{xxivtime}\currenttime\\
+ampmtime & \settimeformat{ampmtime}\currenttime\\
+oclock & \settimeformat{oclock}\currenttime
+\end{tabular}
+
+\section{Specific Date:}
+
+\begin{tabular}{ll}
+\bfseries Format & \bfseries \verb|\formatdate{1}{3}{2009}|\\
+\verb|\longdate| & \longdate\formatdate{1}{3}{2000}\\
+\verb|\shortdate| & \shortdate\formatdate{1}{3}{2000}\\
+\verb|\yyyymmdddate| & \yyyymmdddate\formatdate{1}{3}{2000}\\
+\verb|\ddmmyyyydate| & \ddmmyyyydate\formatdate{1}{3}{2000}\\
+\verb|\dmyyyydate| & \dmyyyydate\formatdate{1}{3}{2000}\\
+\verb|\ddmmyydate| & \ddmmyydate\formatdate{1}{3}{2000}\\
+\verb|\dmyydate| & \dmyydate\formatdate{1}{3}{2000}\\
+\verb|\textdate| & \textdate\formatdate{1}{3}{2000}\\
+\verb|\usdate| & \usdate\formatdate{1}{3}{2000}\\
+\verb|\mmddyyyydate| & \mmddyyyydate\formatdate{1}{3}{2000}\\
+\verb|\mdyyyydate| & \mdyyyydate\formatdate{1}{3}{2000}\\
+\verb|\mmddyydate| & \mmddyydate\formatdate{1}{3}{2000}\\
+\verb|\mdyydate| & \mdyydate\formatdate{1}{3}{2000}
+\end{tabular}
+
+\section{Specific Time}
+
+\begin{tabular}{@{\ttfamily}ll}
+\bfseries\rmfamily Format & \bfseries \verb|\formattime{15}{45}{00}|\\
+hhmmsstime & \settimeformat{hhmmsstime}\formattime{15}{45}{00}\\
+xxivtime & \settimeformat{xxivtime}\formattime{15}{45}{00}\\
+ampmtime & \settimeformat{ampmtime}\formattime{15}{45}{00}\\
+oclock & \settimeformat{oclock}\formattime{15}{45}{00}
+\end{tabular}
+
+\vskip\baselineskip\noindent
+\begin{tabular}{@{\ttfamily}ll}
+\bfseries\rmfamily Format & \bfseries \verb|\formattime{0}{0}{0}|\\
+hhmmsstime & \settimeformat{hhmmsstime}\formattime{0}{0}{0}\\
+xxivtime & \settimeformat{xxivtime}\formattime{0}{0}{0}\\
+ampmtime & \settimeformat{ampmtime}\formattime{0}{0}{0}\\
+oclock & \settimeformat{oclock}\formattime{0}{0}{0}
+\end{tabular}
+
+\vskip\baselineskip\noindent
+\begin{tabular}{@{\ttfamily}ll}
+\bfseries\rmfamily Format & \bfseries \verb|\formattime{12}{0}{0}|\\
+hhmmsstime & \settimeformat{hhmmsstime}\formattime{12}{0}{0}\\
+xxivtime & \settimeformat{xxivtime}\formattime{12}{0}{0}\\
+ampmtime & \settimeformat{ampmtime}\formattime{12}{0}{0}\\
+oclock & \settimeformat{oclock}\formattime{12}{0}{0}
+\end{tabular}
+
+\section{Defining New Dates}
+
+\begin{tabular}{ll}
+\verb|\dashdate| & \dashdate\today\\
+\verb|\usvardate| & \usvardate\today\\
+\verb|\ukvardate| & \ukvardate\today\\
+\verb|\mydate| & \mydate\today\\
+\verb|\yyyymmdd| & \yyyymmdd\today\\
+\verb|\dashdate| & \dashdate\formatdate{8}{3}{2000}\\
+\verb|\usvardate| & \usvardate\formatdate{8}{3}{2000}\\
+\verb|\mydate| & \mydate\formatdate{8}{3}{2000}\\
+\verb|\yyyymmdd| & \yyyymmdd\formatdate{8}{3}{2000}
+\end{tabular}
+
+\section{Defining New Times}
+
+\begin{tabular}{@{\ttfamily}ll}
+\bfseries\rmfamily Format & \bfseries \verb|\currenttime|\\
+dottime & \settimeformat{dottime}\currenttime\\
+dashtime12 & \settimeformat{dashtime12}\currenttime\\
+hhmm & \settimeformat{hhmm}\currenttime
+\end{tabular}
+
+\end{document}
+\endinput
+%%
+%% End of file `dt-sampl.tex'.

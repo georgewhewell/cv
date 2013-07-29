@@ -1,0 +1,2346 @@
+<a 
+ id="top"></a><?xml version="1.0" encoding="iso-8859-1" ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+<!--http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd-->  
+<html xmlns="http://www.w3.org/1999/xhtml"  
+> 
+<head><title>datetime.sty v2.58: Formatting Current Date and Time</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<!-- xhtml,fn-in,css-in --> 
+<meta name="src" content="datetime-manual.tex" /> 
+<meta name="date" content="2010-09-21 10:07:00" /> 
+ 
+<style type="text/css"> 
+<!--  
+ 
+/* start css.sty */  
+.cmmi-10{font-style: italic;}  
+.cmr-17{font-size:170%;}  
+.cmr-12{font-size:120%;}  
+.cmr-8{font-size:80%;}  
+.cmsy-8{font-size:80%;}  
+.cmtt-12{font-size:120%;font-family: monospace;}  
+.cmtt-12{font-family: monospace;}  
+.cmtt-12{font-family: monospace;}  
+.cmtt-12{font-family: monospace;}  
+.cmtt-10{font-family: monospace;}  
+.cmtt-10{font-family: monospace;}  
+.cmtt-10{font-family: monospace;}  
+.cmtt-10{font-family: monospace;}  
+.cmti-10{ font-style: italic;}  
+.cmss-10{ font-family: sans-serif;}  
+.cmss-10{ font-family: sans-serif;}  
+.cmss-10{ font-family: sans-serif;}  
+.cmtt-9{font-size:90%;font-family: monospace;}  
+.cmtt-9{font-family: monospace;}  
+.cmtt-9{font-family: monospace;}  
+.cmtt-9{font-family: monospace;}  
+.cmr-9{font-size:90%;}  
+.cmss-8{font-size:80%; font-family: sans-serif;}  
+.cmss-8{ font-family: sans-serif;}  
+.cmss-8{ font-family: sans-serif;}  
+.cmbx-10{ font-weight: bold;}  
+.cmtt-8{font-size:80%;font-family: monospace;}  
+.cmtt-8{font-family: monospace;}  
+.cmtt-8{font-family: monospace;}  
+.cmtt-8{font-family: monospace;}  
+.cmssbx-10{ font-family: sans-serif; font-weight: bold;}  
+.cmssbx-10{ font-family: sans-serif; font-weight: bold;}  
+.cmssbx-10{ font-family: sans-serif; font-weight: bold;}  
+p.noindent { text-indent: 0em }  
+td p.noindent { text-indent: 0em; margin-top:0em; }  
+p.nopar { text-indent: 0em; }  
+p.indent{ text-indent: 1.5em }  
+@media print {div.crosslinks {visibility:hidden;}}  
+a img { border-top: 0; border-left: 0; border-right: 0; }  
+center { margin-top:1em; margin-bottom:1em; }  
+td center { margin-top:0em; margin-bottom:0em; }  
+.Canvas { position:relative; }  
+img.math{vertical-align:middle;}  
+li p.indent { text-indent: 0em }  
+li p:first-child{ margin-top:0em; }  
+li p:last-child, li div:last-child { margin-bottom:0.5em; }  
+li p~ul:last-child, li p~ol:last-child{ margin-bottom:0.5em; }  
+.enumerate1 {list-style-type:decimal;}  
+.enumerate2 {list-style-type:lower-alpha;}  
+.enumerate3 {list-style-type:lower-roman;}  
+.enumerate4 {list-style-type:upper-alpha;}  
+div.newtheorem { margin-bottom: 2em; margin-top: 2em;}  
+.obeylines-h,.obeylines-v {white-space: nowrap; }  
+div.obeylines-v p { margin-top:0; margin-bottom:0; }  
+.overline{ text-decoration:overline; }  
+.overline img{ border-top: 1px solid black; }  
+td.displaylines {text-align:center; white-space:nowrap;}  
+.centerline {text-align:center;}  
+.rightline {text-align:right;}  
+div.verbatim {font-family: monospace; white-space: nowrap; text-align:left; clear:both; }  
+.fbox {padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }  
+div.fbox {display:table}  
+div.center div.fbox {text-align:center; clear:both; padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }  
+div.minipage{width:100%;}  
+div.center, div.center div.center {text-align: center; margin-left:1em; margin-right:1em;}  
+div.center div {text-align: left;}  
+div.flushright, div.flushright div.flushright {text-align: right;}  
+div.flushright div {text-align: left;}  
+div.flushleft {text-align: left;}  
+.underline{ text-decoration:underline; }  
+.underline img{ border-bottom: 1px solid black; margin-bottom:1pt; }  
+.framebox-c, .framebox-l, .framebox-r { padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }  
+.framebox-c {text-align:center;}  
+.framebox-l {text-align:left;}  
+.framebox-r {text-align:right;}  
+span.thank-mark{ vertical-align: super }  
+span.footnote-mark sup.textsuperscript, span.footnote-mark a sup.textsuperscript{ font-size:80%; }  
+div.footnotes{border-top:solid 1px black; border-bottom:solid 1px black; padding-bottom:1ex; padding-top:0.5ex; margin-right:15%; margin-top:2ex; font-style:italic; font-size:85%;}  
+div.footnotes p{margin-top:0; margin-bottom:0; text-indent:0;}  
+div.tabular, div.center div.tabular {text-align: center; margin-top:0.5em; margin-bottom:0.5em; }  
+table.tabular td p{margin-top:0em;}  
+table.tabular {margin-left: auto; margin-right: auto;}  
+td p:first-child{ margin-top:0em; }  
+td p:last-child{ margin-bottom:0em; }  
+div.td00{ margin-left:0pt; margin-right:0pt; }  
+div.td01{ margin-left:0pt; margin-right:5pt; }  
+div.td10{ margin-left:5pt; margin-right:0pt; }  
+div.td11{ margin-left:5pt; margin-right:5pt; }  
+table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }  
+td.td00{ padding-left:0pt; padding-right:0pt; }  
+td.td01{ padding-left:0pt; padding-right:5pt; }  
+td.td10{ padding-left:5pt; padding-right:0pt; }  
+td.td11{ padding-left:5pt; padding-right:5pt; }  
+table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }  
+.hline hr, .cline hr{ height : 1px; margin:0px; }  
+.tabbing-right {text-align:right;}  
+span.TEX {letter-spacing: -0.125em; }  
+span.TEX span.E{ position:relative;top:0.5ex;left:-0.0417em;}  
+a span.TEX span.E {text-decoration: none; }  
+span.LATEX span.A{ position:relative; top:-0.5ex; left:-0.4em; font-size:85%;}  
+span.LATEX span.TEX{ position:relative; left: -0.4em; }  
+div.float, div.figure {margin-left: auto; margin-right: auto;}  
+div.float img {text-align:center;}  
+div.figure img {text-align:center;}  
+.marginpar {width:20%; float:right; text-align:left; margin-left:auto; margin-top:0.5em; font-size:85%; text-decoration:underline;}  
+.marginpar p{margin-top:0.4em; margin-bottom:0.4em;}  
+table.equation {width:100%;}  
+.equation td{text-align:center; }  
+td.equation { margin-top:1em; margin-bottom:1em; }  
+td.equation-label { width:5%; text-align:center; }  
+td.eqnarray4 { width:5%; white-space: normal; }  
+td.eqnarray2 { width:5%; }  
+table.eqnarray-star, table.eqnarray {width:100%;}  
+div.eqnarray{text-align:center;}  
+div.array {text-align:center;}  
+div.pmatrix {text-align:center;}  
+table.pmatrix {width:100%;}  
+span.pmatrix img{vertical-align:middle;}  
+div.pmatrix {text-align:center;}  
+table.pmatrix {width:100%;}  
+span.bar-css {text-decoration:overline;}  
+img.cdots{vertical-align:middle;}  
+.partToc a, .partToc, .likepartToc a, .likepartToc {line-height: 200%; font-weight:bold; font-size:110%;}  
+.index-item, .index-subitem, .index-subsubitem {display:block}  
+div.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:left;}  
+div.caption span.id{font-weight: bold; white-space: nowrap; }  
+h1.partHead{text-align: center}  
+p.bibitem { text-indent: -2em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }  
+p.bibitem-p { text-indent: 0em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }  
+.paragraphHead, .likeparagraphHead { margin-top:2em; font-weight: bold;}  
+.subparagraphHead, .likesubparagraphHead { font-weight: bold;}  
+.quote {margin-bottom:0.25em; margin-top:0.25em; margin-left:1em; margin-right:1em; text-align:justify;}  
+.verse{white-space:nowrap; margin-left:2em}  
+div.maketitle {text-align:center;}  
+h2.titleHead{text-align:center;}  
+div.maketitle{ margin-bottom: 2em; }  
+div.author, div.date {text-align:center;}  
+div.thanks{text-align:left; margin-left:10%; font-size:85%; font-style:italic; }  
+.quotation {margin-bottom:0.25em; margin-top:0.25em; margin-left:1em; }  
+.abstract p {margin-left:5%; margin-right:5%;}  
+div.abstract {width:100%;}  
+table.multicols { width:100%; margin-left:1em; margin-top:1em; margin-bottom:1em; }  
+div.important { background-color:red; }  
+/* end css.sty */  
+ 
+ 
+--> 
+</style> 
+</head><body 
+>
+   <div class="maketitle">
+                                                                    
+
+                                                                    
+                                                                    
+
+                                                                    
+
+<h2 class="titleHead">datetime.sty v2.58: Formatting Current Date and
+Time</h2>
+           <div class="author" ><span 
+class="cmr-12">Nicola L. C. Talbot</span>
+<br />      <span 
+class="cmr-12">School of Computing Sciences</span>
+<br />        <span 
+class="cmr-12">University of East Anglia</span>
+<br />           <span 
+class="cmr-12">Norwich. NR4 7TJ.</span>
+<br />            <span 
+class="cmr-12">United Kingdom.</span>
+<br /><a 
+href="http://theoval.cmp.uea.ac.uk/~nlct/" class="url" ><span 
+class="cmtt-12">http://theoval.cmp.uea.ac.uk/~nlct/</span></a></div><br />
+<div class="date" ><span 
+class="cmr-12">2010-09-21</span></div>
+   </div>
+   <h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Contents</h3>
+   <div class="tableofcontents">
+   <span class="sectionToc" >1 <a 
+href="#x1-20001" id="QQ2-1-2">Introduction</a></span>
+<br />   <span class="sectionToc" >2 <a 
+href="#x1-30002" id="QQ2-1-3">Predefined Date Formats</a></span>
+<br />   &#x00A0;<span class="subsectionToc" >2.1 <a 
+href="#x1-40002.1" id="QQ2-1-4">ISO format</a></span>
+<br />   &#x00A0;<span class="subsectionToc" >2.2 <a 
+href="#x1-50002.2" id="QQ2-1-5"><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">Day</span><span 
+class="cmsy-10">&#x27E9;&#x27E8;</span><span 
+class="cmti-10">Month</span><span 
+class="cmsy-10">&#x27E9;&#x27E8;</span><span 
+class="cmti-10">Year</span><span 
+class="cmsy-10">&#x27E9; </span>formats</a></span>
+<br />   &#x00A0;<span class="subsectionToc" >2.3 <a 
+href="#x1-60002.3" id="QQ2-1-6"><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">Month</span><span 
+class="cmsy-10">&#x27E9;&#x27E8;</span><span 
+class="cmti-10">Day</span><span 
+class="cmsy-10">&#x27E9;&#x27E8;</span><span 
+class="cmti-10">Year</span><span 
+class="cmsy-10">&#x27E9; </span>formats</a></span>
+<br />   &#x00A0;<span class="subsectionToc" >2.4 <a 
+href="#x1-70002.4" id="QQ2-1-7">Dates defined by <span 
+class="cmss-10">babel</span></a></span>
+<br />   <span class="sectionToc" >3 <a 
+href="#x1-80003" id="QQ2-1-8">Time Commands</a></span>
+<br />   <span class="sectionToc" >4 <a 
+href="#x1-90004" id="QQ2-1-9">Formating Dates</a></span>
+<br />   <span class="sectionToc" >5 <a 
+href="#x1-100005" id="QQ2-1-10">Defining New Date Formats</a></span>
+<br />   <span class="sectionToc" >6 <a 
+href="#x1-110006" id="QQ2-1-11">Saving Dates</a></span>
+<br />   <span class="sectionToc" >7 <a 
+href="#x1-120007" id="QQ2-1-12">Predefined Names</a></span>
+<br />   <span class="sectionToc" >8 <a 
+href="#x1-130008" id="QQ2-1-13">Package Options</a></span>
+<br />   <span class="sectionToc" >9 <a 
+href="#x1-140009" id="QQ2-1-14">Multilingual Support</a></span>
+<br />   <span class="sectionToc" >10 <a 
+href="#x1-1500010" id="QQ2-1-15">Registers</a></span>
+<br />   <span class="sectionToc" >11 <a 
+href="#x1-1600011" id="QQ2-1-16">Configuration File</a></span>
+<br />   <span class="sectionToc" >12 <a 
+href="#x1-1700012" id="QQ2-1-17">LaTeX2HTML styles</a></span>
+<br />   <span class="sectionToc" >13 <a 
+href="#x1-1800013" id="QQ2-1-18">Troubleshooting</a></span>
+<br />   <span class="sectionToc" ><a 
+href="#Q1-1-19">Index</a></span>
+   </div>
+                                                                    
+
+                                                                    
+   <h3 class="sectionHead"><span class="titlemark">1   </span> <a 
+ id="x1-20001"></a>Introduction</h3>
+<a 
+ id="dx1-2001"></a>
+<a 
+ id="dx1-2002"></a>
+<!--l. 31--><p class="noindent" >The <span 
+class="cmss-10">datetime </span>package is a <span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span>2<span 
+class="cmmi-10">&#x03B5;</span>&#x00A0;package that provides various different formats for
+<span 
+class="cmtt-10">\today</span><a 
+ id="dx1-2003"></a>, and provides commands for displaying the current time. If you only want the
+time commands but not the date changing commands, you can pass the option <span 
+class="cmss-10">nodate</span><a 
+ id="dx1-2004"></a>
+to the package. <a 
+ id="dx1-2005"></a>
+<a 
+ id="dx1-2006"></a>
+</p><!--l. 41--><p class="indent" >   Since version 2.4, the <span 
+class="cmss-10">datetime </span>package has been separated into two packages:
+<span 
+class="cmss-10">datetime </span>and <span 
+class="cmss-10">fmtcount</span><a 
+ id="dx1-2007"></a>. When I originally created this package, I defined the commands,
+<span 
+class="cmtt-10">\ordinal</span><a 
+ id="dx1-2008"></a> etc which could be used in the definition of <span 
+class="cmtt-10">\today</span>. Since then, I have
+extended the number of commands available that can be used to display the value
+of a <span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span>&#x00A0;counter, however it seems more appropriate to define all these
+counter-related commands in a separate package. The <span 
+class="cmss-10">fmtcount</span><a 
+ id="dx1-2009"></a> package is now
+distributed separately from the <span 
+class="cmss-10">datetime </span>package, and will also need to be
+installed.
+<a 
+ id="dx1-2010"></a>
+</p><!--l. 54--><p class="indent" >   As from version 2.42, the <span 
+class="cmss-10">datetime </span>package is now compatible with <span 
+class="cmss-10">babel</span><a 
+ id="dx1-2011"></a>, however
+you must load the <span 
+class="cmss-10">datetime </span>package <span 
+class="cmti-10">after </span>the <span 
+class="cmss-10">babel</span><a 
+ id="dx1-2012"></a> package. For example:
+                                                                    
+
+                                                                    
+</p>
+   <div class="verbatim" id="verbatim-1">
+\usepackage[francais]{babel}
+&#x00A0;<br />\usepackage{datetime}
+</div>
+<!--l. 61--><p class="nopar" >
+</p><!--l. 63--><p class="noindent" >
+</p>
+<!--l. 63--><p class="noindent" ><a 
+href="#top">Top</a></p><h3 class="sectionHead"><span class="titlemark">2   </span> <a 
+ id="x1-30002"></a>Predefined Date Formats</h3>
+<!--l. 64--><p class="noindent" >There are various declarations that change the effect of <span 
+class="cmtt-10">\today</span><a 
+ id="dx1-3001"></a>. The change can be
+localised by placing the declaration within a group.
+</p><!--l. 68--><p class="indent" >   As from version 2.43, the numerical date formats (such as <span 
+class="cmtt-10">\ddmmyyyydate</span><a 
+ id="dx1-3002"></a>) use the
+command
+</p><!--l. 70--><p class="indent" >   <hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\dateseparator</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-3003"></a> <span 
+class="cmtt-10">\dateseparator </span></div><hr>
+</p><!--l. 72--><p class="noindent" >
+to separate the numbers. So, for example, if you want to hyphens instead of slashes, you
+can do:
+                                                                    
+
+                                                                    
+</p>
+   <div class="verbatim" id="verbatim-2">
+\renewcommand{\dateseparator}{-}
+</div>
+<!--l. 77--><p class="nopar" >
+</p><!--l. 79--><p class="noindent" >
+</p>
+<!--l. 79--><p class="noindent" ><a 
+href="#top">Top</a></p><h4 class="subsectionHead"><span class="titlemark">2.1   </span> <a 
+ id="x1-40002.1"></a>ISO format</h4>
+<!--l. 81--><p class="noindent" ><hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\yyyymmdddate</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-4001"></a> <span 
+class="cmtt-10">\yyyymmdddate </span></div><hr>
+</p><!--l. 83--><p class="noindent" >
+This declaration will redefine <span 
+class="cmtt-10">\today</span><a 
+ id="dx1-4002"></a> to produce the current date displayed in
+the form 2000/03/08. (You can redefine <span 
+class="cmtt-10">\dateseparator</span><a 
+ id="dx1-4003"></a> to <span 
+class="cmtt-10">- </span>to change to
+2000-03-08.)
+</p><!--l. 88--><p class="noindent" >
+</p>
+<!--l. 88--><p class="noindent" ><a 
+href="#top">Top</a></p><h4 class="subsectionHead"><span class="titlemark">2.2   </span> <a 
+ id="x1-50002.2"></a><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">Day</span><span 
+class="cmsy-10">&#x27E9;&#x27E8;</span><span 
+class="cmti-10">Month</span><span 
+class="cmsy-10">&#x27E9;&#x27E8;</span><span 
+class="cmti-10">Year</span><span 
+class="cmsy-10">&#x27E9; </span>formats</h4>
+<!--l. 90--><p class="noindent" ><hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\longdate</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-5001"></a> <span 
+class="cmtt-10">\longdate </span></div><hr>
+</p><!--l. 92--><p class="noindent" >
+This declaration will redefine <span 
+class="cmtt-10">\today</span><a 
+ id="dx1-5002"></a> to produce the current date displayed in the form
+Wednesday 8<sup class="textsuperscript"><span 
+class="cmr-9">th</span></sup> March, 2000 if the package option <span 
+class="cmss-10">dayofweek</span><a 
+ id="dx1-5003"></a> is used, or 8<sup class="textsuperscript"><span 
+class="cmr-9">th</span></sup> March, 2000
+if the package option <span 
+class="cmss-10">nodayofweek</span><a 
+ id="dx1-5004"></a> is used.
+</p><!--l. 99--><p class="noindent" ><hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\shortdate</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-5005"></a> <span 
+class="cmtt-10">\shortdate </span></div><hr>
+</p><!--l. 101--><p class="noindent" >
+This declaration will redefine <span 
+class="cmtt-10">\today</span><a 
+ id="dx1-5006"></a> to produce the current date displayed in the form
+Wed 8<sup class="textsuperscript"><span 
+class="cmr-9">th</span></sup> Mar, 2000 if the package option <span 
+class="cmss-10">dayofweek</span><a 
+ id="dx1-5007"></a> is used, or 8<sup class="textsuperscript"><span 
+class="cmr-9">th</span></sup> Mar, 2000 if the
+package option <span 
+class="cmss-10">nodayofweek</span><a 
+ id="dx1-5008"></a> is used.
+</p><!--l. 108--><p class="noindent" ><hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\ddmmyyyydate</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-5009"></a> <span 
+class="cmtt-10">\ddmmyyyydate </span></div><hr>
+</p><!--l. 110--><p class="noindent" >
+This declaration will redefine <span 
+class="cmtt-10">\today</span><a 
+ id="dx1-5010"></a> to produce the current date displayed in the form
+08/03/2000.
+</p><!--l. 114--><p class="noindent" ><hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\dmyyyydate</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-5011"></a> <span 
+class="cmtt-10">\dmyyyydate </span></div><hr>
+</p><!--l. 116--><p class="noindent" >
+This declaration will redefine <span 
+class="cmtt-10">\today</span><a 
+ id="dx1-5012"></a> to produce the current date displayed in the form
+8/3/2000.
+</p><!--l. 120--><p class="noindent" ><hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\ddmmyydate</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-5013"></a> <span 
+class="cmtt-10">\ddmmyydate </span></div><hr>
+</p><!--l. 122--><p class="noindent" >
+This declaration will redefine <span 
+class="cmtt-10">\today</span><a 
+ id="dx1-5014"></a> to produce the current date displayed in the form
+08/03/00.
+</p><!--l. 126--><p class="noindent" ><hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\dmyydate</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-5015"></a> <span 
+class="cmtt-10">\dmyydate </span></div><hr>
+                                                                    
+
+                                                                    
+</p><!--l. 128--><p class="noindent" >
+This declaration will redefine <span 
+class="cmtt-10">\today</span><a 
+ id="dx1-5016"></a> to produce the current date displayed in the form
+8/3/00.
+</p><!--l. 132--><p class="noindent" ><hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\textdate</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-5017"></a> <span 
+class="cmtt-10">\textdate </span></div><hr>
+</p><!--l. 134--><p class="noindent" >
+This declaration will redefine <span 
+class="cmtt-10">\today</span><a 
+ id="dx1-5018"></a> to produce the current date displayed
+in the form: Wednesday the Eighth of March, Two Thousand if the package
+option <span 
+class="cmss-10">dayofweek</span><a 
+ id="dx1-5019"></a> is used, or Eighth of March, Two Thousand if the package
+option <span 
+class="cmss-10">nodayofweek</span><a 
+ id="dx1-5020"></a> is used. Note that <span 
+class="cmtt-10">\textdate </span>is defined for use with
+English, it won&#8217;t look right if it is used when another language has been
+selected<span class="footnote-mark"><a 
+href="#fn1x0" id="fn1x0-bk"><sup class="textsuperscript">1</sup></a></span><a 
+ id="x1-5021f1"></a>.
+If you want to define a similar command for another language, you will first need to
+check that the <span 
+class="cmss-10">fmtcount</span><a 
+ id="dx1-5023"></a> package supports that language.
+</p><!--l. 147--><p class="noindent" >
+</p>
+<!--l. 147--><p class="noindent" ><a 
+href="#top">Top</a></p><h4 class="subsectionHead"><span class="titlemark">2.3   </span> <a 
+ id="x1-60002.3"></a><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">Month</span><span 
+class="cmsy-10">&#x27E9;&#x27E8;</span><span 
+class="cmti-10">Day</span><span 
+class="cmsy-10">&#x27E9;&#x27E8;</span><span 
+class="cmti-10">Year</span><span 
+class="cmsy-10">&#x27E9; </span>formats</h4>
+<!--l. 149--><p class="noindent" ><hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\usdate</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-6001"></a> <span 
+class="cmtt-10">\usdate </span></div><hr>
+</p><!--l. 151--><p class="noindent" >
+This declaration will redefine <span 
+class="cmtt-10">\today </span>to produce the current date displayed in the form
+March 8, 2000. (As <span class="TEX">T<span 
+class="E">E</span>X</span>&#x00A0;and <span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span>&#x00A0;do by default.)
+</p><!--l. 156--><p class="noindent" ><hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\mmddyyyydate</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-6002"></a> <span 
+class="cmtt-10">\mmddyyyydate </span></div><hr>
+</p><!--l. 158--><p class="noindent" >
+This declaration will redefine <span 
+class="cmtt-10">\today</span><a 
+ id="dx1-6003"></a> to produce the current date displayed in the form
+03/08/2000.
+</p><!--l. 162--><p class="noindent" ><hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\mdyyyydate</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-6004"></a> <span 
+class="cmtt-10">\mdyyyydate </span></div><hr>
+</p><!--l. 164--><p class="noindent" >
+This declaration will redefine <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\today</span></span></span> to produce the current date displayed in the form
+3/8/2000.
+</p><!--l. 168--><p class="noindent" ><hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\mmddyydate</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-6005"></a> <span 
+class="cmtt-10">\mmddyydate </span></div><hr>
+</p><!--l. 170--><p class="noindent" >
+This declaration will redefine <span 
+class="cmtt-10">\today</span><a 
+ id="dx1-6006"></a> to produce the current date displayed in the form
+03/08/00.
+</p><!--l. 174--><p class="noindent" ><hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\mdyydate</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-6007"></a> <span 
+class="cmtt-10">\mdyydate </span></div><hr>
+</p><!--l. 176--><p class="noindent" >
+This declaration will redefine <span 
+class="cmtt-10">\today</span><a 
+ id="dx1-6008"></a> to produce the current date displayed in the form
+3/8/00.
+</p><!--l. 180--><p class="noindent" >
+</p>
+<!--l. 180--><p class="noindent" ><a 
+href="#top">Top</a></p><h4 class="subsectionHead"><span class="titlemark">2.4   </span> <a 
+ id="x1-70002.4"></a>Dates defined by <span 
+class="cmss-10">babel</span></h4>
+<!--l. 182--><p class="noindent" >In addition to the above, the declarations <span 
+class="cmtt-10">\date</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">lang</span><span 
+class="cmsy-10">&#x27E9; </span>are available for all languages
+defined either by calling <span 
+class="cmss-10">babel</span><a 
+ id="dx1-7001"></a> prior to <span 
+class="cmss-10">datetime </span>or by passing the language name as an
+                                                                    
+
+                                                                    
+option to <span 
+class="cmss-10">datetime</span>. See&#x00A0;<a 
+href="#x1-100005"><span 
+class="cmsy-10">§</span>5 </a><a 
+href="#x1-100005">Defining New Date Formats<!--tex4ht:ref: sec:newdate --></a> if you want to define your own
+customised date format.
+</p><!--l. 188--><p class="noindent" >
+</p>
+<!--l. 188--><p class="noindent" ><a 
+href="#top">Top</a></p><h3 class="sectionHead"><span class="titlemark">3   </span> <a 
+ id="x1-80003"></a>Time Commands</h3>
+<!--l. 190--><p class="noindent" >The current time is displayed using the command
+</p><!--l. 191--><p class="indent" >   <hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\currenttime</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-8001"></a> <span 
+class="cmtt-10">\currenttime </span></div><hr>
+</p><!--l. 193--><p class="noindent" >
+</p><!--l. 195--><p class="indent" >   A specific time can be displayed using the command
+</p><!--l. 196--><p class="indent" >   <hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\formattime</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-8002"></a> <span 
+class="cmtt-10">\formattime{</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">hour</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">}{</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">minute</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">}{</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">second</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">} </span></div><hr>
+</p><!--l. 198--><p class="noindent" >
+where <span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">hour</span><span 
+class="cmsy-10">&#x27E9; </span>is a number from&#x00A0;0 to&#x00A0;23, and <span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">minute</span><span 
+class="cmsy-10">&#x27E9; </span>and <span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">second</span><span 
+class="cmsy-10">&#x27E9; </span>are numbers
+from&#x00A0;0 to&#x00A0;59.
+</p><!--l. 202--><p class="indent" >   The format can be changed using the declaration
+</p><!--l. 203--><p class="indent" >   <hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\settimeformat</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-8003"></a> <span 
+class="cmtt-10">\settimeformat{</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">style</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">} </span></div><hr>
+</p><!--l. 205--><p class="noindent" >
+where <span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">style</span><span 
+class="cmsy-10">&#x27E9; </span>is the name of the format. Predefined formats are:
+     </p><dl class="description"><dt class="description">
+<span 
+class="cmbx-10">xxivtime</span> </dt><dd 
+class="description">Twenty-four hour time in the form 22:28 (Default)
+     </dd><dt class="description">
+<span 
+class="cmbx-10">hhmmsstime</span> </dt><dd 
+class="description">Twenty-four hour time in the form 22:28:00
+     </dd><dt class="description">
+<span 
+class="cmbx-10">ampmtime</span> </dt><dd 
+class="description">Twelve hour time in the form 10:28pm
+     </dd><dt class="description">
+<span 
+class="cmbx-10">oclock</span> </dt><dd 
+class="description">Displays the current time as a string, e.g.&#x00A0;Twenty-Eight minutes past Ten
+     in the afternoon.</dd></dl>
+<!--l. 216--><p class="indent" >   New time formats can be defined using the command:
+</p><!--l. 217--><p class="indent" >   <hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\newtimeformat</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-8004"></a> <span 
+class="cmtt-10">\newtimeformat{</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">name</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">}{</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">format</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">} </span></div><hr>
+</p><!--l. 219--><p class="noindent" >
+where <span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">name</span><span 
+class="cmsy-10">&#x27E9; </span>is the name of the new format (used in <span 
+class="cmtt-10">\settimeformat</span><a 
+ id="dx1-8005"></a>), and <span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">format</span><span 
+class="cmsy-10">&#x27E9;</span>
+is how to format the time. Within <span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">format</span><span 
+class="cmsy-10">&#x27E9; </span>you can use the counters <span 
+class="cmss-10">HOUR</span><a 
+ id="dx1-8006"></a> (number of
+hours after midnight), <span 
+class="cmss-10">MINUTE</span><a 
+ id="dx1-8007"></a> (number of minutes past the hour), <span 
+class="cmss-10">SECOND</span><a 
+ id="dx1-8008"></a> (number
+of seconds) <span 
+class="cmss-10">HOURXII</span><a 
+ id="dx1-8009"></a> (number of hours after midnight/midday), <span 
+class="cmss-10">TOHOUR</span><a 
+ id="dx1-8010"></a> (the next
+hour) and <span 
+class="cmss-10">TOMINUTE</span><a 
+ id="dx1-8011"></a> (number of minutes to the next hour), and the corresponding
+commands: <span 
+class="cmtt-10">\THEHOUR</span><a 
+ id="dx1-8012"></a>, <span 
+class="cmtt-10">\THEMINUTE</span><a 
+ id="dx1-8013"></a>, <span 
+class="cmtt-10">\THESECOND</span><a 
+ id="dx1-8014"></a>, <span 
+class="cmtt-10">\THEHOURXII</span><a 
+ id="dx1-8015"></a>, <span 
+class="cmtt-10">\THETOHOUR</span><a 
+ id="dx1-8016"></a> and
+<span 
+class="cmtt-10">\THETOMINUTE</span><a 
+ id="dx1-8017"></a>.
+</p><!--l. 231--><p class="indent" >   For example, to define a new time format that uses a dot instead of a colon:
+                                                                    
+
+                                                                    
+</p>
+   <div class="verbatim" id="verbatim-3">
+\newtimeformat{dottime}{\twodigit{\THEHOUR}.\twodigit{\THEMINUTE}}
+</div>
+<!--l. 235--><p class="nopar" > You then need to switch to this new format before you can use it:
+                                                                    
+
+                                                                    
+</p>
+   <div class="verbatim" id="verbatim-4">
+\settimeformat{dottime}
+&#x00A0;<br />\currenttime
+</div>
+<!--l. 240--><p class="nopar" >
+</p><!--l. 242--><p class="indent" >   As from version 2.43, if you only want to change the separator, you can simply
+redefine
+</p><!--l. 244--><p class="indent" >   <hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\timeseparator</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-8018"></a> <span 
+class="cmtt-10">\timeseparator </span></div><hr>
+</p><!--l. 246--><p class="noindent" >
+instead of defining a new time format. For example:
+                                                                    
+
+                                                                    
+</p>
+   <div class="verbatim" id="verbatim-5">
+\renewcommand{\timeseparator}{.}
+</div>
+<!--l. 250--><p class="nopar" > The <span 
+class="cmtt-10">xxivtime </span>format will now work like the <span 
+class="cmtt-10">dottime </span>format defined above.
+</p><!--l. 254--><p class="noindent" >
+</p>
+<!--l. 254--><p class="noindent" ><a 
+href="#top">Top</a></p><h3 class="sectionHead"><span class="titlemark">4   </span> <a 
+ id="x1-90004"></a>Formating Dates</h3>
+<!--l. 255--><p class="noindent" ><hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\pdfdate</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-9001"></a> <span 
+class="cmtt-10">\pdfdate </span></div><hr>
+</p><!--l. 257--><p class="noindent" >
+This command<span class="footnote-mark"><a 
+href="#fn2x0" id="fn2x0-bk"><sup class="textsuperscript">2</sup></a></span><a 
+ id="x1-9002f2"></a>
+prints the date in the format required for PDF files, e.g.&#x00A0;if the date is 1 May 2004 and
+time is 22:02, <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\pdfdate</span></span></span> will print 20040501220200. The reason this date format is
+separate from all the others is because the other form doesn&#8217;t get properly expanded by
+PDF<span class="TEX">T<span 
+class="E">E</span>X</span>. (This command is defined regardless of whether the package option <span 
+class="cmtt-10">nodate</span>
+is called.) Example:
+                                                                    
+
+                                                                    
+</p>
+   <div class="verbatim" id="verbatim-6">
+\pdfinfo{
+&#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;/Author&#x00A0;(Me)
+&#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;/Title&#x00A0;(A&#x00A0;Sample&#x00A0;Document)
+&#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;/CreationDate&#x00A0;(D:20040501215500)
+&#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;/ModDate&#x00A0;(D:\pdfdate)
+&#x00A0;<br />}
+</div>
+<!--l. 274--><p class="nopar" > <span 
+class="cmbx-10">Note </span>that PDF<span class="TEX">T<span 
+class="E">E</span>X</span>&#x00A0;introduced the new primitive <span 
+class="cmtt-10">\pdfcreationdate </span>in
+version 1.30.0, so <span 
+class="cmtt-10">\pdfdate </span>isn&#8217;t required with newer versions of PDF<span class="TEX">T<span 
+class="E">E</span>X</span>.
+(<span 
+class="cmtt-10">\pdfcreationdate </span>is better than <span 
+class="cmtt-10">\pdfdate </span>as it also stores the time zone.)
+</p><!--l. 280--><p class="indent" >   There are two commands that print the name of the current month:
+</p><!--l. 282--><p class="indent" >   <hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\monthname</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-9003"></a> <span 
+class="cmtt-10">\monthname[</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">num</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">] </span></div><hr>
+</p><!--l. 284--><p class="noindent" >
+prints the current month name in full, e.g.&#x00A0;August, and
+</p><!--l. 287--><p class="indent" >   <hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\shortmonthname</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-9004"></a> <span 
+class="cmtt-10">\shortmonthname[</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">num</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">] </span></div><hr>
+</p><!--l. 289--><p class="noindent" >
+prints the abbreviated month name, e.g.&#x00A0;Aug. Both <span 
+class="cmtt-10">\monthname </span>and <span 
+class="cmtt-10">\shortmonthname</span>
+take an optional argument (a number from 1 to 12) if the name of a specific
+month is required. For example, <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\monthname[6]</span></span></span> will produced the output:
+June.
+</p><!--l. 295--><p class="indent" >   The day of the week is computed using the algorithm documented at
+<a 
+href="http://userpages.wittenburg.edu/bshelburne/Comp150/DayOfWeek.htm" class="url" ><span 
+class="cmtt-10">http://userpages.wittenburg.edu/bshelburne/Comp150/DayOfWeek.htm</span></a>. This
+algorithm works for any date between 1<sup class="textsuperscript"><span 
+class="cmr-9">st</span></sup> Jan, 1901 and 31<sup class="textsuperscript"><span 
+class="cmr-9">st</span></sup> Dec, 2099. The following
+macros display the day of week for a given date:
+</p><!--l. 301--><p class="indent" >   <hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\dayofweekname</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-9005"></a> <span 
+class="cmtt-10">\dayofweekname{</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">day</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">}{</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">month</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">}{</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">year</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">} </span></div><hr>
+</p><!--l. 303--><p class="noindent" >
+prints the day of week for the specified date. For example,
+                                                                    
+
+                                                                    
+</p>
+   <div class="verbatim" id="verbatim-7">
+\dayofweekname{31}{10}{2002}
+</div>
+<!--l. 307--><p class="nopar" > will produce the output: Thursday.
+</p><!--l. 310--><p class="indent" >   <hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\shortdayofweekname</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-9006"></a> <span 
+class="cmtt-10">\shortdayofweekname</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">day</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">{</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">month</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">}{</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">year</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">} </span></div><hr>
+</p><!--l. 312--><p class="noindent" >
+prints the abbreviated name for the day of week for the specified date. For
+example
+                                                                    
+
+                                                                    
+</p>
+   <div class="verbatim" id="verbatim-8">
+\shortdayofweekname{31}{10}{2002}
+</div>
+<!--l. 317--><p class="nopar" > will produce the output: Thu.
+</p><!--l. 320--><p class="indent" >   <hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\ifshowdow</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-9007"></a> <span 
+class="cmtt-10">\ifshowdow </span></div><hr>
+</p><!--l. 322--><p class="noindent" >
+This <span class="TEX">T<span 
+class="E">E</span>X</span>&#x00A0;conditional can be used to determine whether or not the option <span 
+class="cmss-10">dayofweek</span><a 
+ id="dx1-9008"></a>
+has been passed to the package. For example:
+                                                                    
+
+                                                                    
+</p>
+   <div class="verbatim" id="verbatim-9">
+\ifshowdow\dayofweekname{31}{10}{2002}&#x00A0;\fi
+</div>
+<!--l. 328--><p class="nopar" > will only display the day of week if the <span 
+class="cmss-10">dayofweek</span><a 
+ id="dx1-9009"></a> option was passed to <span 
+class="cmss-10">datetime</span>.
+Alternatively, you can use David&#x00A0;Carlisle&#8217;s <span 
+class="cmss-10">ifthen</span><a 
+ id="dx1-9010"></a> package:
+                                                                    
+
+                                                                    
+</p>
+   <div class="verbatim" id="verbatim-10">
+\ifthenelse{\boolean{showdow}}{\dayofweekname{31}{10}{2002}&#x00A0;}{}
+</div>
+<!--l. 334--><p class="nopar" >
+</p><!--l. 336--><p class="indent" >   The command
+</p><!--l. 337--><p class="indent" >   <hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\ordinaldate</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-9011"></a> <span 
+class="cmtt-10">\ordinaldate{</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">number</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">} </span></div><hr>
+</p><!--l. 339--><p class="noindent" >
+displays <span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">number</span><span 
+class="cmsy-10">&#x27E9; </span>as a date-type ordinal. If the current language is English, this will
+simply pass the argument to <span 
+class="cmtt-10">\ordinalnum</span><a 
+ id="dx1-9012"></a> (defined in the <span 
+class="cmss-10">fmtcount</span><a 
+ id="dx1-9013"></a> package), if the
+current language is Breton, Welsh or French, a superscript will only be added if
+<span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">number</span><span 
+class="cmsy-10">&#x27E9; </span>is 1, otherwise only <span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">number</span><span 
+class="cmsy-10">&#x27E9; </span>will be displayed.
+</p><!--l. 347--><p class="indent" >   The macro<span class="footnote-mark"><a 
+href="#fn3x0" id="fn3x0-bk"><sup class="textsuperscript">3</sup></a></span><a 
+ id="x1-9014f3"></a>
+</p><!--l. 350--><p class="indent" >   <hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\formatdate</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-9016"></a> <span 
+class="cmtt-10">\formatdate{</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">day</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">}{</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">month</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">}{</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">year</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">} </span></div><hr>
+</p><!--l. 352--><p class="noindent" >
+formats the specified date according to the current format of
+<span 
+class="cmtt-10">\today</span><a 
+ id="dx1-9017"></a><span class="footnote-mark"><a 
+href="#fn4x0" id="fn4x0-bk"><sup class="textsuperscript">4</sup></a></span><a 
+ id="x1-9018f4"></a>.
+(Arguments must all be integers.) For example, in combination with <span 
+class="cmtt-10">\longdate</span><a 
+ id="dx1-9022"></a>, the
+command
+                                                                    
+
+                                                                    
+</p>
+   <div class="verbatim" id="verbatim-11">
+\formatdate{27}{9}{2004}
+</div>
+<!--l. 361--><p class="nopar" > will produce the output: Monday 27<sup class="textsuperscript"><span 
+class="cmr-9">th</span></sup> September, 2004.
+</p><!--l. 365--><p class="indent" >   You can ensure that a number is displayed with at least two digits using the
+command
+</p><!--l. 367--><p class="indent" >   <hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\twodigit</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-9023"></a> <span 
+class="cmtt-10">\twodigit{</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">num</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">} </span></div><hr>
+</p><!--l. 369--><p class="noindent" >
+</p><!--l. 371--><p class="noindent" >
+</p>
+<!--l. 371--><p class="noindent" ><a 
+href="#top">Top</a></p><h3 class="sectionHead"><span class="titlemark">5   </span> <a 
+ id="x1-100005"></a>Defining New Date Formats</h3>
+<!--l. 373--><p class="noindent" >New date formats can be defined using the command:
+</p><!--l. 374--><p class="indent" >   <hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\newdateformat</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-10001"></a> <span 
+class="cmtt-10">\newdateformat{</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">name</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">}{</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">format</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">} </span></div><hr>
+</p><!--l. 376--><p class="noindent" >
+where <span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">name</span><span 
+class="cmsy-10">&#x27E9; </span>is the name of the new format, and <span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">format</span><span 
+class="cmsy-10">&#x27E9; </span>is how to format the date.
+Within the argument <span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">format</span><span 
+class="cmsy-10">&#x27E9; </span>you can use the commands <span 
+class="cmtt-10">\THEDAY</span><a 
+ id="dx1-10002"></a>, <span 
+class="cmtt-10">\THEMONTH</span><a 
+ id="dx1-10003"></a> and
+<span 
+class="cmtt-10">\THEYEAR</span><a 
+ id="dx1-10004"></a> to represent the relevant day, month and year, or you can use the counters
+<span 
+class="cmss-10">DAY</span><a 
+ id="dx1-10005"></a>, <span 
+class="cmss-10">MONTH</span><a 
+ id="dx1-10006"></a> and <span 
+class="cmss-10">YEAR</span><a 
+ id="dx1-10007"></a> if you want to use <span 
+class="cmtt-10">\ordinal</span><a 
+ id="dx1-10008"></a> etc. Once you have defined the
+new date format, you can then switch to it using the declaration <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\</span></span></span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">name</span><span 
+class="cmsy-10">&#x27E9; </span>(i.e.&#x00A0;the
+name you specified preceded by a backslash), and subsequent calls to <span 
+class="cmtt-10">\today</span><a 
+ id="dx1-10009"></a> and
+<span 
+class="cmtt-10">\formatdate</span><a 
+ id="dx1-10010"></a> will use your new format.
+</p><!--l. 388--><p class="indent" >   For example, suppose you want to define a new date format called, say, <span 
+class="cmtt-10">mydate</span>, that
+will typeset the date in the form: 8-3-2002, then you can do:
+                                                                    
+
+                                                                    
+</p>
+   <div class="verbatim" id="verbatim-12">
+\newdateformat{mydate}{\THEDAY-\THEMONTH-\THEYEAR}
+</div>
+<!--l. 393--><p class="nopar" > <span 
+class="cmtt-10">\newdateformat</span><a 
+ id="dx1-10011"></a> will then define the declaration <span 
+class="cmtt-10">\mydate </span>which can be used to switch
+to your new format. In the following example, two new date formats are defined,
+and they are then selected to produce two different formats for the current
+date:
+                                                                    
+
+                                                                    
+</p>
+   <div class="verbatim" id="verbatim-13">
+\newdateformat{dashdate}{%
+&#x00A0;<br />\twodigit{\THEDAY}-\twodigit{\THEMONTH}-\THEYEAR}
+&#x00A0;<br />\newdateformat{usvardate}{%
+&#x00A0;<br />\monthname[\THEMONTH]&#x00A0;\ordinal{DAY},&#x00A0;\THEYEAR}
+&#x00A0;<br />Dash:&#x00A0;\dashdate\today.
+&#x00A0;<br />US:&#x00A0;\usvardate\today.
+</div>
+<!--l. 408--><p class="nopar" > If the current date is, say, 8th March, 2002, the above code will produce the following:
+Dash: 08-03-2002. US: March 8<sup class="textsuperscript"><span 
+class="cmr-9">th</span></sup>, 2002.
+</p><!--l. 413--><p class="indent" >   Note that <span 
+class="cmtt-10">\THEDAY</span><a 
+ id="dx1-10012"></a> etc and <span 
+class="cmss-10">DAY</span><a 
+ id="dx1-10013"></a> etc have no real meaning outside <span 
+class="cmtt-10">\newdateformat</span><a 
+ id="dx1-10014"></a>
+(this is why they are in uppercase). Incidentally, the <span 
+class="cmtt-10">dashdate </span>format is not really
+necessary, as you can achieve this format using:
+                                                                    
+
+                                                                    
+</p>
+   <div class="verbatim" id="verbatim-14">
+\renewcommand{\dateseparator}{-}
+&#x00A0;<br />\ddmmyyyydate
+</div>
+<!--l. 421--><p class="nopar" >
+</p><!--l. 423--><p class="indent" >   Another note: in the above code, <span 
+class="cmtt-10">\ordinal</span><a 
+ id="dx1-10015"></a> was used to illustrate the use of the <span 
+class="cmss-10">DAY</span><a 
+ id="dx1-10016"></a>
+counter. It is better to use <span 
+class="cmtt-10">\ordinaldate</span><a 
+ id="dx1-10017"></a> instead:
+                                                                    
+
+                                                                    
+</p>
+   <div class="verbatim" id="verbatim-15">
+\newdateformat{usvardate}{%
+&#x00A0;<br />\monthname[\THEMONTH]&#x00A0;\ordinaldate{\THEDAY},&#x00A0;\THEYEAR}
+</div>
+<!--l. 429--><p class="nopar" >
+</p><!--l. 431--><p class="noindent" >
+</p>
+<!--l. 431--><p class="noindent" ><a 
+href="#top">Top</a></p><h3 class="sectionHead"><span class="titlemark">6   </span> <a 
+ id="x1-110006"></a>Saving Dates</h3>
+<!--l. 433--><p class="noindent" >It is possible to save a date for later use using the command:
+<span class="footnote-mark"><a 
+href="#fn5x0" id="fn5x0-bk"><sup class="textsuperscript">5</sup></a></span><a 
+ id="x1-11001f5"></a>
+</p><!--l. 435--><p class="indent" >   <hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\newdate</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-11002"></a> <span 
+class="cmtt-10">\newdate{</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">name</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">}{</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">day</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">}{</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">month</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">}{</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">year</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">} </span></div><hr>
+</p><!--l. 437--><p class="noindent" >
+</p><!--l. 439--><p class="indent" >   This date can later be displayed using the same format as that used by
+<span 
+class="cmtt-10">\formatdate</span><a 
+ id="dx1-11003"></a> using the command:
+</p><!--l. 441--><p class="indent" >   <hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\displaydate</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-11004"></a> <span 
+class="cmtt-10">\displaydate{</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">name</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">} </span></div><hr>
+</p><!--l. 443--><p class="noindent" >
+</p><!--l. 445--><p class="indent" >   Individual elements of the date can be extracted using the commands:
+</p><!--l. 447--><p class="indent" >   <hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\getdateday</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-11005"></a> <span 
+class="cmtt-10">\getdateday{</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">name</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">} </span></div><hr>
+</p><!--l. 449--><p class="noindent" >
+</p><!--l. 450--><p class="indent" >   <hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\getdatemonth</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-11006"></a> <span 
+class="cmtt-10">\getdatemonth{</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">name</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">} </span></div><hr>
+</p><!--l. 452--><p class="noindent" >
+</p><!--l. 453--><p class="indent" >   <hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\getdateyear</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-11007"></a> <span 
+class="cmtt-10">\getdateyear{</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">name</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">} </span></div><hr>
+</p><!--l. 455--><p class="noindent" >
+</p><!--l. 457--><p class="noindent" >
+</p>
+<!--l. 457--><p class="noindent" ><a 
+href="#top">Top</a></p><h3 class="sectionHead"><span class="titlemark">7   </span> <a 
+ id="x1-120007"></a>Predefined Names</h3>
+<!--l. 459--><p class="noindent" >The following commands are defined by the <span 
+class="cmss-10">datetime </span>package:
+</p>
+                                                                    
+
+                                                                    
+   <div class="tabular"> <table id="TBL-2" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-2-1g"><col 
+id="TBL-2-1" /><col 
+id="TBL-2-2" /></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-2-1-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-1-1"  
+class="td11"><span 
+class="cmbx-10">Command Name</span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-1-2"  
+class="td11"><span 
+class="cmbx-10">Default Value                                </span></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-2-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-2-1"  
+class="td11"><span 
+class="cmtt-10">\dateseparator</span><a 
+ id="dx1-12001"></a> </td> <td  style="white-space:nowrap; text-align:left;" id="TBL-2-2-2"  
+class="td11"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">/</span></span></span></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-3-1"  
+class="td11"><span 
+class="cmtt-10">\timeseparator</span><a 
+ id="dx1-12002"></a>   </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-3-2"  
+class="td11"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">:</span></span></span>                                    </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-4-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-4-1"  
+class="td11"><span 
+class="cmtt-10">\amname</span><a 
+ id="dx1-12003"></a>          </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-4-2"  
+class="td11"><span 
+class="cmtt-10">am                                   </span></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-5-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-5-1"  
+class="td11"><span 
+class="cmtt-10">\pmname</span><a 
+ id="dx1-12004"></a>          </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-5-2"  
+class="td11"><span 
+class="cmtt-10">pm                                   </span></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-6-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-6-1"  
+class="td11"><span 
+class="cmtt-10">\amorpmname</span><a 
+ id="dx1-12005"></a>      </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-6-2"  
+class="td11"><span 
+class="cmtt-10">\amname</span><a 
+ id="dx1-12006"></a> if morning, otherwise <span 
+class="cmtt-10">\pmname</span><a 
+ id="dx1-12007"></a>    </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-7-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-7-1"  
+class="td11"><span 
+class="cmtt-10">\amstring</span><a 
+ id="dx1-12008"></a>        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-7-2"  
+class="td11"><span 
+class="cmtt-10">in the morning                       </span></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-8-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-8-1"  
+class="td11"><span 
+class="cmtt-10">\pmstring</span><a 
+ id="dx1-12009"></a>        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-8-2"  
+class="td11"><span 
+class="cmtt-10">in the afternoon                     </span></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-9-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-9-1"  
+class="td11"><span 
+class="cmtt-10">\amorpmstring</span><a 
+ id="dx1-12010"></a>    </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-9-2"  
+class="td11"><span 
+class="cmtt-10">\amstring</span><a 
+ id="dx1-12011"></a> if morning, otherwise <span 
+class="cmtt-10">\pmstring</span><a 
+ id="dx1-12012"></a></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-10-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-10-1"  
+class="td11"><span 
+class="cmtt-10">\halfpast</span><a 
+ id="dx1-12013"></a>        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-10-2"  
+class="td11"><span 
+class="cmtt-10">Half past                            </span></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-11-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-11-1"  
+class="td11"><span 
+class="cmtt-10">\quarterpast</span><a 
+ id="dx1-12014"></a>     </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-11-2"  
+class="td11"><span 
+class="cmtt-10">Quarter past                         </span></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-12-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-12-1"  
+class="td11"><span 
+class="cmtt-10">\quarterto</span><a 
+ id="dx1-12015"></a>       </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-12-2"  
+class="td11"><span 
+class="cmtt-10">Quarter to                           </span></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-13-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-13-1"  
+class="td11"><span 
+class="cmtt-10">\noon</span><a 
+ id="dx1-12016"></a>            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-13-2"  
+class="td11"><span 
+class="cmtt-10">Noon                                 </span></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-14-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-14-1"  
+class="td11"><span 
+class="cmtt-10">\midnight</span><a 
+ id="dx1-12017"></a>        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-14-2"  
+class="td11"><span 
+class="cmtt-10">Midnight                             </span></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-15-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-15-1"  
+class="td11"><span 
+class="cmtt-10">\oclockstring</span><a 
+ id="dx1-12018"></a>    </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-15-2"  
+class="td11"><span 
+class="cmtt-10">O&#8217;Clock                              </span></td> </tr></table>
+</div>
+<!--l. 481--><p class="noindent" >
+</p>
+<!--l. 481--><p class="noindent" ><a 
+href="#top">Top</a></p><h3 class="sectionHead"><span class="titlemark">8   </span> <a 
+ id="x1-130008"></a>Package Options</h3>
+<!--l. 483--><p class="noindent" >The following options may be passed to this package:
+     </p><dl class="description"><dt class="description">
+<span 
+class="cmssbx-10">long</span><a 
+ id="dx1-13001"></a> </dt><dd 
+class="description">make <span 
+class="cmtt-10">\today </span>produce long date
+     </dd><dt class="description">
+<span 
+class="cmssbx-10">short</span><a 
+ id="dx1-13002"></a> </dt><dd 
+class="description">make <span 
+class="cmtt-10">\today </span>produce short date
+     </dd><dt class="description">
+<span 
+class="cmssbx-10">yyyymmdd</span><a 
+ id="dx1-13003"></a> </dt><dd 
+class="description">make <span 
+class="cmtt-10">\today </span>produce YYYY/MM/DD date
+     </dd><dt class="description">
+<span 
+class="cmssbx-10">ddmmyyyy</span><a 
+ id="dx1-13004"></a> </dt><dd 
+class="description">make <span 
+class="cmtt-10">\today </span>produce DD/MM/YYYY date
+     </dd><dt class="description">
+<span 
+class="cmssbx-10">dmyyyy</span><a 
+ id="dx1-13005"></a> </dt><dd 
+class="description">make <span 
+class="cmtt-10">\today </span>produce D/M/YYYY date
+     </dd><dt class="description">
+<span 
+class="cmssbx-10">ddmmyy</span><a 
+ id="dx1-13006"></a> </dt><dd 
+class="description">make <span 
+class="cmtt-10">\today </span>produce DD/MM/YY date
+     </dd><dt class="description">
+<span 
+class="cmssbx-10">dmyy</span><a 
+ id="dx1-13007"></a> </dt><dd 
+class="description">make <span 
+class="cmtt-10">\today </span>produce D/M/YY date
+     </dd><dt class="description">
+<span 
+class="cmssbx-10">text</span><a 
+ id="dx1-13008"></a> </dt><dd 
+class="description">make <span 
+class="cmtt-10">\today </span>produce text date
+     </dd><dt class="description">
+<span 
+class="cmssbx-10">us</span><a 
+ id="dx1-13009"></a> </dt><dd 
+class="description">make <span 
+class="cmtt-10">\today </span>produce US style date
+     </dd><dt class="description">
+<span 
+class="cmssbx-10">mmddyyyy</span><a 
+ id="dx1-13010"></a> </dt><dd 
+class="description">make <span 
+class="cmtt-10">\today </span>produce MM/DD/YYYY date
+                                                                    
+
+                                                                    
+     </dd><dt class="description">
+<span 
+class="cmssbx-10">mdyyyy</span><a 
+ id="dx1-13011"></a> </dt><dd 
+class="description">make <span 
+class="cmtt-10">\today </span>produce M/D/YYYY date
+     </dd><dt class="description">
+<span 
+class="cmssbx-10">mmddyy</span><a 
+ id="dx1-13012"></a> </dt><dd 
+class="description">make <span 
+class="cmtt-10">\today </span>produce MM/DD/YY date
+     </dd><dt class="description">
+<span 
+class="cmssbx-10">mdyy</span><a 
+ id="dx1-13013"></a> </dt><dd 
+class="description">make <span 
+class="cmtt-10">\today </span>produce M/D/YY date
+     </dd><dt class="description">
+<span 
+class="cmssbx-10">raise</span><a 
+ id="dx1-13014"></a> </dt><dd 
+class="description">make ordinal st,nd,rd,th appear as superscript
+     </dd><dt class="description">
+<span 
+class="cmssbx-10">level</span><a 
+ id="dx1-13015"></a> </dt><dd 
+class="description">make ordinal st,nd,rd,th appear level with rest of text
+     </dd><dt class="description">
+<span 
+class="cmssbx-10">dayofweek</span><a 
+ id="dx1-13016"></a> </dt><dd 
+class="description">make  the  day  of  week  appear  for  <span 
+class="cmtt-10">\longdate</span><a 
+ id="dx1-13017"></a>,  <span 
+class="cmtt-10">\shortdate</span><a 
+ id="dx1-13018"></a> or
+     <span 
+class="cmtt-10">\textdate</span><a 
+ id="dx1-13019"></a>
+     </dd><dt class="description">
+<span 
+class="cmssbx-10">nodayofweek</span><a 
+ id="dx1-13020"></a> </dt><dd 
+class="description">don&#8217;t display the day of week.
+     </dd><dt class="description">
+<span 
+class="cmssbx-10">hhmmss</span><a 
+ id="dx1-13021"></a> </dt><dd 
+class="description">make <span 
+class="cmtt-10">\currenttime </span>produce <span 
+class="cmtt-10">hhmmsstime </span>format
+     </dd><dt class="description">
+<span 
+class="cmssbx-10">24hr</span><a 
+ id="dx1-13022"></a> </dt><dd 
+class="description">make <span 
+class="cmtt-10">\currenttime </span>produce <span 
+class="cmtt-10">xxivtime </span>format
+     </dd><dt class="description">
+<span 
+class="cmssbx-10">12hr</span><a 
+ id="dx1-13023"></a> </dt><dd 
+class="description">make <span 
+class="cmtt-10">\currenttime </span>produce <span 
+class="cmtt-10">ampmtime </span>format
+     </dd><dt class="description">
+<span 
+class="cmssbx-10">oclock</span><a 
+ id="dx1-13024"></a> </dt><dd 
+class="description">make <span 
+class="cmtt-10">\currenttime </span>produce <span 
+class="cmtt-10">oclock </span>format
+     </dd><dt class="description">
+<span 
+class="cmssbx-10">nodate</span><a 
+ id="dx1-13025"></a> </dt><dd 
+class="description">Don&#8217;t redefine <span 
+class="cmtt-10">\today </span>or define the month or day of week commands
+     (useful if you only want the time commands)
+     </dd><dt class="description">
+<span 
+class="cmssbx-10">iso</span><a 
+ id="dx1-13026"></a> </dt><dd 
+class="description">as <span 
+class="cmss-10">ddmmyyyy</span><a 
+ id="dx1-13027"></a> and <span 
+class="cmss-10">hhmmss</span><a 
+ id="dx1-13028"></a> but also sets date separator to <span 
+class="cmtt-10">- </span>and time separator
+     to <span 
+class="cmtt-10">:</span></dd></dl>
+<!--l. 521--><p class="indent" >   The default options are: <span 
+class="cmss-10">long</span><a 
+ id="dx1-13029"></a>, <span 
+class="cmss-10">raise</span><a 
+ id="dx1-13030"></a>, <span 
+class="cmss-10">dayofweek</span><a 
+ id="dx1-13031"></a> and <span 
+class="cmss-10">24hr</span><a 
+ id="dx1-13032"></a>.
+</p><!--l. 524--><p class="noindent" >
+</p>
+<!--l. 524--><p class="noindent" ><a 
+href="#top">Top</a></p><h3 class="sectionHead"><span class="titlemark">9   </span> <a 
+ id="x1-140009"></a>Multilingual Support</h3>
+                                                                    
+
+                                                                    
+<!--l. 526--><p class="noindent" >If you use the <span 
+class="cmss-10">ngerman</span><a 
+ id="dx1-14001"></a> package, you must use <span 
+class="cmss-10">datetime</span>&#8217;s <span 
+class="cmss-10">ngerman</span><a 
+ id="dx1-14002"></a> package option if you
+want the date displayed in the same form as <span 
+class="cmss-10">ngerman</span><a 
+ id="dx1-14003"></a>. You must also load <span 
+class="cmss-10">ngerman</span><a 
+ id="dx1-14004"></a>
+<span 
+class="cmti-10">before </span>you load <span 
+class="cmss-10">datetime</span>. Similarly for the <span 
+class="cmss-10">german</span><a 
+ id="dx1-14005"></a> package.
+</p><!--l. 532--><p class="indent" >   If you want to use the <span 
+class="cmss-10">babel</span><a 
+ id="dx1-14006"></a> package, you must load it <span 
+class="cmti-10">before </span>you load the <span 
+class="cmss-10">datetime</span>
+package. This is because the <span 
+class="cmss-10">babel</span><a 
+ id="dx1-14007"></a> <span 
+class="cmtt-10">\date</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">lang</span><span 
+class="cmsy-10">&#x27E9; </span>commands redefine <span 
+class="cmtt-10">\today</span><a 
+ id="dx1-14008"></a>, whereas the
+<span 
+class="cmss-10">datetime</span><a 
+ id="dx1-14009"></a> package redefines <span 
+class="cmtt-10">\today </span>to use <span 
+class="cmtt-10">\formatdate</span><a 
+ id="dx1-14010"></a>, and the date formatting
+commands (such as <span 
+class="cmtt-10">\longdate</span><a 
+ id="dx1-14011"></a>) redefine <span 
+class="cmtt-10">\formatdate </span>rather than <span 
+class="cmtt-10">\today</span>. This ensures
+consistent formatting of the dates whether you use <span 
+class="cmtt-10">\today </span>or <span 
+class="cmtt-10">\formatdate</span>. Therefore,
+the <span 
+class="cmss-10">datetime </span>package has to redefine all the <span 
+class="cmtt-10">\date</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">lang</span><span 
+class="cmsy-10">&#x27E9; </span>commands accordingly. Thus
+the multilingual date support is mostly limited to that provided by <span 
+class="cmss-10">babel</span><a 
+ id="dx1-14012"></a>. Additional
+support, such as the day of week names and abbreviations, are only supplied for
+those languages that I know, or that other people have been able to supply for
+me.
+</p><!--l. 548--><p class="indent" >   As from v2.56, the package options supplied to <span 
+class="cmss-10">datetime </span>override <span 
+class="cmss-10">babel</span><a 
+ id="dx1-14013"></a>&#8217;s date
+format. For example:
+                                                                    
+
+                                                                    
+</p>
+   <div class="verbatim" id="verbatim-16">
+\usepackage[french,spanish]{babel}
+&#x00A0;<br />\usepackage[ddmmyyyy]{datetime}
+</div>
+<!--l. 553--><p class="nopar" > will use ddmmyyyy date format regardless of language. Note that if you use a
+declaration instead of a package option, for example:
+                                                                    
+
+                                                                    
+</p>
+   <div class="verbatim" id="verbatim-17">
+\usepackage[french,spanish]{babel}
+&#x00A0;<br />\usepackage{datetime}
+&#x00A0;<br />\ddmmyyyydate
+</div>
+<!--l. 561--><p class="nopar" > the date format will be switched back to <span 
+class="cmtt-10">\datefrench </span>or <span 
+class="cmtt-10">\datespanish </span>whenever the
+language is set. You can use
+</p><!--l. 564--><p class="indent" >   <hr><div title="Definition"><span class="marginpar"><span 
+class="cmtt-9">\setdefaultdate</span><span 
+class="cmtt-9">&#x00A0;</span></span><a 
+ id="dx1-14014"></a> <span 
+class="cmtt-10">\setdefaultdate{</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">declaration</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">} </span></div><hr>
+</p><!--l. 566--><p class="noindent" >
+to always use <span 
+class="cmtt-10">{</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">declaration</span><span 
+class="cmsy-10">&#x27E9;</span><span 
+class="cmtt-10">} </span>whenever the language is set. For example:
+                                                                    
+
+                                                                    
+</p>
+   <div class="verbatim" id="verbatim-18">
+\setdefaultdate{\ddmmyyyydate}
+</div>
+<!--l. 571--><p class="nopar" >
+</p><!--l. 573--><p class="indent" >   The commands <span 
+class="cmtt-10">\monthname</span><a 
+ id="dx1-14015"></a> and <span 
+class="cmtt-10">\shortmonthname</span><a 
+ id="dx1-14016"></a>, will produce the month name in
+the current language. If you want the month name in a specific language, you can
+use the command <span 
+class="cmtt-10">\monthname</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">lang</span><span 
+class="cmsy-10">&#x27E9;</span>. For example, <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\monthnamefrench[6]</span></span></span>
+will produce the output: juin. Note that <span 
+class="cmtt-10">\textdate</span><a 
+ id="dx1-14017"></a> is formatted for English
+dates, and won&#8217;t look right if used with another language setting. If you want
+a textual date, the <span 
+class="cmss-10">fmtcount</span><a 
+ id="dx1-14018"></a> package (which is loaded by <span 
+class="cmss-10">datetime</span>) defines
+some commands which display a number or ordinal as a word, but it only has
+very limited multilingual support. See the <span 
+class="cmss-10">fmtcount</span><a 
+ id="dx1-14019"></a> documentation for further
+details.
+</p><!--l. 586--><p class="indent" >   There is currently only <span 
+class="cmti-10">limited </span>multilingual support for <span 
+class="cmtt-10">\dayofweekname</span><a 
+ id="dx1-14020"></a>
+and <span 
+class="cmtt-10">\shortdayofweekname</span><a 
+ id="dx1-14021"></a> (just English, French, Portuguese, Spanish and
+German<span class="footnote-mark"><a 
+href="#fn6x0" id="fn6x0-bk"><sup class="textsuperscript">6</sup></a></span><a 
+ id="x1-14022f6"></a>).
+You can add support for other languages by defining the commands <span 
+class="cmtt-10">\dayofweeknameid</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">lang</span><span 
+class="cmsy-10">&#x27E9;</span>
+and <span 
+class="cmtt-10">\shortdayofweeknameid</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">lang</span><span 
+class="cmsy-10">&#x27E9;</span>. Note that these commands only take <span 
+class="cmti-10">one</span>
+argument which should be a number from&#x00A0;1 to&#x00A0;7 indicating the day of the
+week.
+</p><!--l. 596--><p class="indent" >   You can use the following as templates. Replace <span 
+class="cmtt-10">english </span>with the name of your
+language (as given by <span 
+class="cmtt-10">\languagename</span><a 
+ id="dx1-14023"></a>) and replace <span 
+class="cmtt-10">Sunday </span>etc as appropriate:
+                                                                    
+
+                                                                    
+</p>
+   <div class="verbatim" id="verbatim-19">
+\providecommand*{\dayofweeknameidenglish}[1]{%
+&#x00A0;<br />\ifcase#1\relax
+&#x00A0;<br />\or&#x00A0;Sunday%
+&#x00A0;<br />\or&#x00A0;Monday%
+&#x00A0;<br />\or&#x00A0;Tuesday%
+&#x00A0;<br />\or&#x00A0;Wednesday%
+&#x00A0;<br />\or&#x00A0;Thursday%
+&#x00A0;<br />\or&#x00A0;Friday%
+&#x00A0;<br />\or&#x00A0;Saturday%
+&#x00A0;<br />\fi}
+&#x00A0;<br />\providecommand*{\shortdayofweeknameidenglish}[1]{%
+&#x00A0;<br />\ifcase#1\relax
+&#x00A0;<br />\or&#x00A0;Sun%
+&#x00A0;<br />\or&#x00A0;Mon%
+&#x00A0;<br />\or&#x00A0;Tue%
+&#x00A0;<br />\or&#x00A0;Wed%
+&#x00A0;<br />\or&#x00A0;Thu%
+&#x00A0;<br />\or&#x00A0;Fri%
+&#x00A0;<br />\or&#x00A0;Sat%
+&#x00A0;<br />\fi}
+</div>
+<!--l. 622--><p class="nopar" > If you want them added to future versions of <span 
+class="cmss-10">datetime</span><a 
+ id="dx1-14024"></a>, please email me the
+code.
+</p><!--l. 626--><p class="noindent" >
+</p>
+<!--l. 626--><p class="noindent" ><a 
+href="#top">Top</a></p><h3 class="sectionHead"><span class="titlemark">10   </span> <a 
+ id="x1-1500010"></a>Registers</h3>
+<!--l. 628--><p class="noindent" ><span class="TEX">T<span 
+class="E">E</span>X</span>&#x00A0;provides <span 
+class="cmtt-10">\day</span><a 
+ id="dx1-15001"></a>, <span 
+class="cmtt-10">\month</span><a 
+ id="dx1-15002"></a> and <span 
+class="cmtt-10">\year</span><a 
+ id="dx1-15003"></a> registers. In addition, <span 
+class="cmss-10">datetime </span>provides the
+registers: <span 
+class="cmtt-10">\currenthour</span><a 
+ id="dx1-15004"></a>, <span 
+class="cmtt-10">\currentminute</span><a 
+ id="dx1-15005"></a> and <span 
+class="cmtt-10">\currentsecond</span><a 
+ id="dx1-15006"></a>. Note that old
+distributions of <span class="TEX">T<span 
+class="E">E</span>X</span>&#x00A0;will always have <span 
+class="cmtt-10">\currentsecond </span>set to zero.
+</p><!--l. 634--><p class="noindent" >
+</p>
+<!--l. 634--><p class="noindent" ><a 
+href="#top">Top</a></p><h3 class="sectionHead"><span class="titlemark">11   </span> <a 
+ id="x1-1600011"></a>Configuration File</h3>
+<!--l. 636--><p class="noindent" >As from Version 2.4, the <span 
+class="cmss-10">datetime </span>package will read in settings from the configuration
+file <span 
+class="cmtt-10">datetime.cfg</span>, if it exists, which will override the default package options.
+For example, suppose you prefer a short date without the day of week by
+default, you will need to create a file called <span 
+class="cmtt-10">datetime.cfg </span>that contains the
+line:
+                                                                    
+
+                                                                    
+</p>
+   <div class="verbatim" id="verbatim-20">
+\shortdate\showdowfalse
+</div>
+<!--l. 644--><p class="nopar" > The file <span 
+class="cmtt-10">datetime.cfg </span>should then go somewhere on the <span class="TEX">T<span 
+class="E">E</span>X</span>&#x00A0;path. Now all you need
+to do is:
+                                                                    
+
+                                                                    
+</p>
+   <div class="verbatim" id="verbatim-21">
+\usepackage{datetime}
+</div>
+<!--l. 649--><p class="nopar" > without having to specify the <span 
+class="cmss-10">short</span><a 
+ id="dx1-16001"></a> and <span 
+class="cmss-10">nodayofweek</span><a 
+ id="dx1-16002"></a> options.
+</p><!--l. 653--><p class="indent" >   You can also use this file to define and set your own date styles. For example, you
+could create a configuration file that has the following lines:
+                                                                    
+
+                                                                    
+</p>
+   <div class="verbatim" id="verbatim-22">
+\newdateformat{dashdate}{\twodigit{\THEDAY}-\twodigit{\THEMONTH}-\THEYEAR}
+&#x00A0;<br />\dashdate
+</div>
+<!--l. 659--><p class="nopar" > Whenever you use the <span 
+class="cmss-10">datetime </span>package, it will now use this format by default.
+</p><!--l. 663--><p class="noindent" >
+</p>
+<!--l. 663--><p class="noindent" ><a 
+href="#top">Top</a></p><h3 class="sectionHead"><span class="titlemark">12   </span> <a 
+ id="x1-1700012"></a>LaTeX2HTML styles</h3>
+<a 
+ id="dx1-17001"></a>
+<a 
+ id="dx1-17002"></a>
+<!--l. 667--><p class="noindent" >Version 2.43 and above of the <span 
+class="cmss-10">datetime </span>bundle supplies the LaTeX2HTML style file
+<span 
+class="cmtt-10">datetime.perl</span>. This file should be placed in a directory searched by LaTeX2HTML.
+The following limitations apply to the LaTeX2HTML styles:
+</p>
+     <ul class="itemize1">
+     <li class="itemize">The configuration file <span 
+class="cmtt-10">datetime.cfg </span>is currently ignored. You can however
+     do:
+                                                                    
+
+                                                                    
+     <div class="verbatim" id="verbatim-23">
+     \usepackage{datetime}
+     &#x00A0;<br />\html{\input{datetime.cfg}}
+</div>
+     <!--l. 680--><p class="nopar" > This, I agree, is an unpleasant cludge.
+     </p></li>
+     <li class="itemize">The commands <span 
+class="cmtt-10">\monthname</span><span 
+class="cmsy-10">&#x27E8;</span><span 
+class="cmti-10">language</span><span 
+class="cmsy-10">&#x27E9; </span>are not implemented.
+     </li>
+     <li class="itemize">Some of the languages are not implemented.
+     </li>
+     <li class="itemize">The package option <span 
+class="cmss-10">nodate</span><a 
+ id="dx1-17003"></a> is not implemented.
+     </li></ul>
+<!--l. 692--><p class="noindent" >
+</p>
+<!--l. 692--><p class="noindent" ><a 
+href="#top">Top</a></p><h3 class="sectionHead"><span class="titlemark">13   </span> <a 
+ id="x1-1800013"></a>Troubleshooting</h3>
+<!--l. 694--><p class="noindent" >There is a <span 
+class="cmss-10">datetime</span><a 
+ id="dx1-18001"></a> FAQ available at: <a 
+href="http://theoval.cmp.uea.ac.uk/~nlct/latex/packages/faq/" class="url" ><span 
+class="cmtt-10">http://theoval.cmp.uea.ac.uk/~nlct/latex/packages/faq/</span></a>
+</p><!--l. 699--><p class="indent" >   <a 
+ id="likesection.1"></a><a 
+ id="Q1-1-19"></a>
+</p><!--l. 2--><p class="noindent" >
+</p>
+<!--l. 2--><p class="noindent" ><a 
+href="#top">Top</a></p><h3 class="likesectionHead"><a 
+ id="x1-1900013"></a>Index</h3>
+<!--l. 4--><p class="noindent" >                                                                  <span 
+class="cmbx-10">A</span>
+</p>
+   <div class="theindex"><span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\amname</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-12003" ><span class="underline">1</span></a>, <a 
+href="datetime-manual.html#dx1-12006" ><span class="underline">2</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\amorpmname</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-12005" ><span class="underline">3</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\amorpmstring</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-12010" ><span class="underline">4</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\amstring</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-12008" ><span class="underline">5</span></a>, <a 
+href="datetime-manual.html#dx1-12011" ><span class="underline">6</span></a> <br /></span>
+<p class="theindex">                                                                  <span 
+class="cmbx-10">B</span>
+<span class="index-item"><span 
+class="cmss-10">babel </span>package&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-2011" >7</a>, <a 
+href="datetime-manual.html#dx1-2012" >8</a>, <a 
+href="datetime-manual.html#dx1-7001" >9</a>, <a 
+href="datetime-manual.html#dx1-14006" >10</a>, <a 
+href="datetime-manual.html#dx1-14007" >11</a>, <a 
+href="datetime-manual.html#dx1-14012" >12</a>, <a 
+href="datetime-manual.html#dx1-14013" >13</a> <br /></span>
+</p><p class="theindex">                                                                  <span 
+class="cmbx-10">C</span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\currenthour</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-15004" ><span class="underline">14</span></a> <br /></span>
+                                                                    
+
+                                                                    
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\currentminute</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-15005" ><span class="underline">15</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\currentsecond</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-15006" ><span class="underline">16</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\currenttime</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-8001" ><span 
+class="cmti-10">17</span></a> <br /></span>
+</p><p class="theindex">                                                                  <span 
+class="cmbx-10">D</span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\dateseparator</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-3003" ><span 
+class="cmti-10">18</span></a>, <a 
+href="datetime-manual.html#dx1-4003" ><span class="underline">19</span></a>, <a 
+href="datetime-manual.html#dx1-12001" ><span class="underline">20</span></a> <br /></span>
+<span class="index-item"><span 
+class="cmss-10">datetime </span>package&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-14009" >21</a>, <a 
+href="datetime-manual.html#dx1-14024" >22</a>, <a 
+href="datetime-manual.html#dx1-18001" >23</a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\day</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-15001" ><span class="underline">24</span></a> <br /></span>
+<span class="index-item"><span 
+class="cmss-10">DAY </span>counter&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-10005" >25</a>, <a 
+href="datetime-manual.html#dx1-10013" >26</a>, <a 
+href="datetime-manual.html#dx1-10016" >27</a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\dayofweekname</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-9005" ><span 
+class="cmti-10">28</span></a>, <a 
+href="datetime-manual.html#dx1-14020" ><span class="underline">29</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\ddmmyydate</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-5013" ><span 
+class="cmti-10">30</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\ddmmyyyydate</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-3002" ><span class="underline">31</span></a>, <a 
+href="datetime-manual.html#dx1-5009" ><span 
+class="cmti-10">32</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\displaydate</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-11004" ><span 
+class="cmti-10">33</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\dmyydate</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-5015" ><span 
+class="cmti-10">34</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\dmyyyydate</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-5011" ><span 
+class="cmti-10">35</span></a> <br /></span>
+</p><p class="theindex">                                                                  <span 
+class="cmbx-10">F</span>
+<span class="index-item"><span 
+class="cmss-10">fmtcount </span>package&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-2007" >36</a>, <a 
+href="datetime-manual.html#dx1-2009" >37</a>, <a 
+href="datetime-manual.html#dx1-5023" >38</a>, <a 
+href="datetime-manual.html#dx1-9013" >39</a>, <a 
+href="datetime-manual.html#dx1-14018" >40</a>, <a 
+href="datetime-manual.html#dx1-14019" >41</a>, <a 
+href="datetime-manual.html#dx1-5022" >42</a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\formatdate</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-9016" ><span 
+class="cmti-10">43</span></a>, <a 
+href="datetime-manual.html#dx1-10010" ><span class="underline">44</span></a>, <a 
+href="datetime-manual.html#dx1-11003" ><span class="underline">45</span></a>, <a 
+href="datetime-manual.html#dx1-14010" ><span class="underline">46</span></a>, <a 
+href="datetime-manual.html#dx1-9020" ><span class="underline">47</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\formattime</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-8002" ><span 
+class="cmti-10">48</span></a> <br /></span>
+</p><p class="theindex">                                                                  <span 
+class="cmbx-10">G</span>
+<span class="index-item"><span 
+class="cmss-10">german </span>package&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-14005" >49</a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\getdateday</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-11005" ><span 
+class="cmti-10">50</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\getdatemonth</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-11006" ><span 
+class="cmti-10">51</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\getdateyear</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-11007" ><span 
+class="cmti-10">52</span></a> <br /></span>
+</p><p class="theindex">                                                                  <span 
+class="cmbx-10">H</span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\halfpast</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-12013" ><span class="underline">53</span></a> <br /></span>
+<span class="index-item"><span 
+class="cmss-10">HOUR </span>counter&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-8006" >54</a> <br /></span>
+<span class="index-item"><span 
+class="cmss-10">HOURXII </span>counter&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-8009" >55</a> <br /></span>
+</p><p class="theindex">                                                                   <span 
+class="cmbx-10">I</span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\ifshowdow</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-9007" ><span 
+class="cmti-10">56</span></a> <br /></span>
+<span class="index-item"><span 
+class="cmss-10">ifthen </span>package&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-9010" >57</a> <br /></span>
+</p><p class="theindex">                                                                  <span 
+class="cmbx-10">L</span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\languagename</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-14023" ><span class="underline">58</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\longdate</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-5001" ><span 
+class="cmti-10">59</span></a>, <a 
+href="datetime-manual.html#dx1-9022" ><span class="underline">60</span></a>, <a 
+href="datetime-manual.html#dx1-13017" ><span class="underline">61</span></a>, <a 
+href="datetime-manual.html#dx1-14011" ><span class="underline">62</span></a>, <a 
+href="datetime-manual.html#dx1-9021" ><span class="underline">63</span></a> <br /></span>
+                                                                    
+
+                                                                    
+</p><p class="theindex">                                                                  <span 
+class="cmbx-10">M</span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\mdyydate</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-6007" ><span 
+class="cmti-10">64</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\mdyyyydate</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-6004" ><span 
+class="cmti-10">65</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\midnight</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-12017" ><span class="underline">66</span></a> <br /></span>
+<span class="index-item"><span 
+class="cmss-10">MINUTE </span>counter&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-8007" >67</a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\mmddyydate</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-6005" ><span 
+class="cmti-10">68</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\mmddyyyydate</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-6002" ><span 
+class="cmti-10">69</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\month</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-15002" ><span class="underline">70</span></a> <br /></span>
+<span class="index-item"><span 
+class="cmss-10">MONTH </span>counter&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-10006" >71</a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\monthname</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-9003" ><span 
+class="cmti-10">72</span></a>, <a 
+href="datetime-manual.html#dx1-14015" ><span class="underline">73</span></a> <br /></span>
+</p><p class="theindex">                                                                  <span 
+class="cmbx-10">N</span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\newdate</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-11002" ><span 
+class="cmti-10">74</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\newdateformat</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-10001" ><span 
+class="cmti-10">75</span></a>, <a 
+href="datetime-manual.html#dx1-10011" ><span class="underline">76</span></a>, <a 
+href="datetime-manual.html#dx1-10014" ><span class="underline">77</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\newtimeformat</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-8004" ><span 
+class="cmti-10">78</span></a> <br /></span>
+<span class="index-item"><span 
+class="cmss-10">ngerman </span>package&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-14001" >79</a>, <a 
+href="datetime-manual.html#dx1-14003" >80</a>, <a 
+href="datetime-manual.html#dx1-14004" >81</a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\noon</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-12016" ><span class="underline">82</span></a> <br /></span>
+</p><p class="theindex">                                                                  <span 
+class="cmbx-10">O</span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\oclockstring</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-12018" ><span class="underline">83</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\ordinal</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-2008" ><span class="underline">84</span></a>, <a 
+href="datetime-manual.html#dx1-10008" ><span class="underline">85</span></a>, <a 
+href="datetime-manual.html#dx1-10015" ><span class="underline">86</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\ordinaldate</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-9011" ><span 
+class="cmti-10">87</span></a>, <a 
+href="datetime-manual.html#dx1-10017" ><span class="underline">88</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\ordinalnum</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-9012" ><span class="underline">89</span></a> <br /></span>
+</p><p class="theindex">                                                                  <span 
+class="cmbx-10">P</span>
+<span class="index-item">package options:<br /></span>
+<span class="index-subitem">&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmss-10">12hr</span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-13023" ><span class="underline">90</span></a> <br /></span>
+<span class="index-subitem">&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmss-10">24hr</span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-13022" ><span class="underline">91</span></a>, <a 
+href="datetime-manual.html#dx1-13032" ><span class="underline">92</span></a> <br /></span>
+<span class="index-subitem">&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmss-10">dayofweek</span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-5003" ><span class="underline">93</span></a>, <a 
+href="datetime-manual.html#dx1-5007" ><span class="underline">94</span></a>, <a 
+href="datetime-manual.html#dx1-5019" ><span class="underline">95</span></a>, <a 
+href="datetime-manual.html#dx1-9008" ><span class="underline">96</span></a>, <a 
+href="datetime-manual.html#dx1-9009" ><span class="underline">97</span></a>, <a 
+href="datetime-manual.html#dx1-13016" ><span class="underline">98</span></a>, <a 
+href="datetime-manual.html#dx1-13031" ><span class="underline">99</span></a> <br /></span>
+<span class="index-subitem">&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmss-10">ddmmyy</span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-13006" ><span class="underline">100</span></a> <br /></span>
+<span class="index-subitem">&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmss-10">ddmmyyyy</span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-13004" ><span class="underline">101</span></a>, <a 
+href="datetime-manual.html#dx1-13027" ><span class="underline">102</span></a> <br /></span>
+<span class="index-subitem">&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmss-10">dmyy</span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-13007" ><span class="underline">103</span></a> <br /></span>
+<span class="index-subitem">&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmss-10">dmyyyy</span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-13005" ><span class="underline">104</span></a> <br /></span>
+<span class="index-subitem">&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmss-10">hhmmss</span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-13021" ><span class="underline">105</span></a>, <a 
+href="datetime-manual.html#dx1-13028" ><span class="underline">106</span></a> <br /></span>
+<span class="index-subitem">&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmss-10">iso</span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-13026" ><span class="underline">107</span></a> <br /></span>
+<span class="index-subitem">&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmss-10">level</span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-13015" ><span class="underline">108</span></a> <br /></span>
+<span class="index-subitem">&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmss-10">long</span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-13001" ><span class="underline">109</span></a>, <a 
+href="datetime-manual.html#dx1-13029" ><span class="underline">110</span></a> <br /></span>
+<span class="index-subitem">&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmss-10">mdyy</span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-13013" ><span class="underline">111</span></a> <br /></span>
+<span class="index-subitem">&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmss-10">mdyyyy</span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-13011" ><span class="underline">112</span></a> <br /></span>
+<span class="index-subitem">&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmss-10">mmddyy</span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-13012" ><span class="underline">113</span></a> <br /></span>
+<span class="index-subitem">&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmss-10">mmddyyyy</span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-13010" ><span class="underline">114</span></a> <br /></span>
+                                                                    
+
+                                                                    
+<span class="index-subitem">&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmss-10">ngerman</span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-14002" ><span class="underline">115</span></a> <br /></span>
+<span class="index-subitem">&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmss-10">nodate</span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-2004" ><span class="underline">116</span></a>, <a 
+href="datetime-manual.html#dx1-13025" ><span class="underline">117</span></a>, <a 
+href="datetime-manual.html#dx1-17003" ><span class="underline">118</span></a> <br /></span>
+<span class="index-subitem">&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmss-10">nodayofweek</span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-5004" ><span class="underline">119</span></a>, <a 
+href="datetime-manual.html#dx1-5008" ><span class="underline">120</span></a>, <a 
+href="datetime-manual.html#dx1-5020" ><span class="underline">121</span></a>, <a 
+href="datetime-manual.html#dx1-13020" ><span class="underline">122</span></a>, <a 
+href="datetime-manual.html#dx1-16002" ><span class="underline">123</span></a> <br /></span>
+<span class="index-subitem">&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmss-10">oclock</span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-13024" ><span class="underline">124</span></a> <br /></span>
+<span class="index-subitem">&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmss-10">raise</span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-13014" ><span class="underline">125</span></a>, <a 
+href="datetime-manual.html#dx1-13030" ><span class="underline">126</span></a> <br /></span>
+<span class="index-subitem">&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmss-10">short</span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-13002" ><span class="underline">127</span></a>, <a 
+href="datetime-manual.html#dx1-16001" ><span class="underline">128</span></a> <br /></span>
+<span class="index-subitem">&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmss-10">text</span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-13008" ><span class="underline">129</span></a> <br /></span>
+<span class="index-subitem">&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmss-10">us</span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-13009" ><span class="underline">130</span></a> <br /></span>
+<span class="index-subitem">&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmss-10">yyyymmdd</span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-13003" ><span class="underline">131</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\pdfdate</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-9001" ><span 
+class="cmti-10">132</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\pmname</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-12004" ><span class="underline">133</span></a>, <a 
+href="datetime-manual.html#dx1-12007" ><span class="underline">134</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\pmstring</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-12009" ><span class="underline">135</span></a>, <a 
+href="datetime-manual.html#dx1-12012" ><span class="underline">136</span></a> <br /></span>
+</p><p class="theindex">                                                                  <span 
+class="cmbx-10">Q</span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\quarterpast</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-12014" ><span class="underline">137</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\quarterto</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-12015" ><span class="underline">138</span></a> <br /></span>
+</p><p class="theindex">                                                                  <span 
+class="cmbx-10">S</span>
+<span class="index-item"><span 
+class="cmss-10">SECOND </span>counter&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-8008" >139</a> <br /></span>
+<span class="index-item"><span 
+class="cmss-10">seminar </span>package&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-9015" >140</a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\setdefaultdate</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-14014" ><span 
+class="cmti-10">141</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\settimeformat</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-8003" ><span 
+class="cmti-10">142</span></a>, <a 
+href="datetime-manual.html#dx1-8005" ><span class="underline">143</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\shortdate</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-5005" ><span 
+class="cmti-10">144</span></a>, <a 
+href="datetime-manual.html#dx1-13018" ><span class="underline">145</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\shortdayofweekname</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-9006" ><span 
+class="cmti-10">146</span></a>, <a 
+href="datetime-manual.html#dx1-14021" ><span class="underline">147</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\shortmonthname</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-9004" ><span 
+class="cmti-10">148</span></a>, <a 
+href="datetime-manual.html#dx1-14016" ><span class="underline">149</span></a> <br /></span>
+</p><p class="theindex">                                                                  <span 
+class="cmbx-10">T</span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\textdate</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-5017" ><span 
+class="cmti-10">150</span></a>, <a 
+href="datetime-manual.html#dx1-13019" ><span class="underline">151</span></a>, <a 
+href="datetime-manual.html#dx1-14017" ><span class="underline">152</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\THEDAY</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-10002" ><span class="underline">153</span></a>, <a 
+href="datetime-manual.html#dx1-10012" ><span class="underline">154</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\THEHOUR</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-8012" ><span class="underline">155</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\THEHOURXII</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-8015" ><span class="underline">156</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\THEMINUTE</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-8013" ><span class="underline">157</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\THEMONTH</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-10003" ><span class="underline">158</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\THESECOND</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-8014" ><span class="underline">159</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\THETOHOUR</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-8016" ><span class="underline">160</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\THETOMINUTE</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-8017" ><span class="underline">161</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\THEYEAR</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-10004" ><span class="underline">162</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\timeseparator</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-8018" ><span 
+class="cmti-10">163</span></a>, <a 
+href="datetime-manual.html#dx1-12002" ><span class="underline">164</span></a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\today</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-2003" ><span class="underline">165</span></a>, <a 
+href="datetime-manual.html#dx1-3001" ><span class="underline">166</span></a>, <a 
+href="datetime-manual.html#dx1-4002" ><span class="underline">167</span></a>, <a 
+href="datetime-manual.html#dx1-5002" ><span class="underline">168</span></a>, <a 
+href="datetime-manual.html#dx1-5006" ><span class="underline">169</span></a>, <a 
+href="datetime-manual.html#dx1-5010" ><span class="underline">170</span></a>, <a 
+href="datetime-manual.html#dx1-5012" ><span class="underline">171</span></a>, <a 
+href="datetime-manual.html#dx1-5014" ><span class="underline">172</span></a>, <a 
+href="datetime-manual.html#dx1-5016" ><span class="underline">173</span></a>, <a 
+href="datetime-manual.html#dx1-5018" ><span class="underline">174</span></a>, <a 
+href="datetime-manual.html#dx1-6003" ><span class="underline">175</span></a>, <a 
+href="datetime-manual.html#dx1-6006" ><span class="underline">176</span></a>, <a 
+href="datetime-manual.html#dx1-6008" ><span class="underline">177</span></a>, <a 
+href="datetime-manual.html#dx1-9017" ><span class="underline">178</span></a>, <a 
+href="datetime-manual.html#dx1-10009" ><span class="underline">179</span></a>, <a 
+href="datetime-manual.html#dx1-14008" ><span class="underline">180</span></a>, <a 
+href="datetime-manual.html#dx1-9019" ><span class="underline">181</span></a> <br /></span>
+<span class="index-item"><span 
+class="cmss-10">TOHOUR </span>counter&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-8010" >182</a> <br /></span>
+<span class="index-item"><span 
+class="cmss-10">TOMINUTE </span>counter&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-8011" >183</a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\twodigit</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-9023" ><span 
+class="cmti-10">184</span></a> <br /></span>
+</p><p class="theindex">                                                                  <span 
+class="cmbx-10">U</span>
+                                                                    
+
+                                                                    
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\usdate</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-6001" ><span 
+class="cmti-10">185</span></a> <br /></span>
+</p><p class="theindex">                                                                  <span 
+class="cmbx-10">Y</span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\year</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-15003" ><span class="underline">186</span></a> <br /></span>
+<span class="index-item"><span 
+class="cmss-10">YEAR </span>counter&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-10007" >187</a> <br /></span>
+<span class="index-item"><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10">\yyyymmdddate</span></span></span>&#x00A0;&#x00A0;<a 
+href="datetime-manual.html#dx1-4001" ><span 
+class="cmti-10">188</span></a> <br /></span>
+</p></div>
+   <div class="footnotes"><!--l. 143--><p class="noindent" ><span class="footnote-mark"><a 
+href="#fn1x0-bk" id="fn1x0"><sup class="textsuperscript">1</sup></a></span><span 
+class="cmr-8">in fact, you may get an error from the </span><span 
+class="cmss-8">fmtcount</span><a 
+ id="dx1-5022"></a> <span 
+class="cmr-8">package if you are using a language that it doesn&#8217;t</span>
+<span 
+class="cmr-8">support.</span></p>
+<!--l. 259--><p class="noindent" ><span class="footnote-mark"><a 
+href="#fn2x0-bk" id="fn2x0"><sup class="textsuperscript">2</sup></a></span><span 
+class="cmr-8">thanks to Ulrich Dirr for asking about this</span></p>
+<!--l. 349--><p class="indent" >     <span class="footnote-mark"><a 
+href="#fn3x0-bk" id="fn3x0"><sup class="textsuperscript">3</sup></a></span><span 
+class="cmr-8">Note the name change since version 1.1. The command name was changed from </span><span 
+class="cmtt-8">\thedate </span><span 
+class="cmr-8">to</span>
+<span 
+class="cmtt-8">\formatdate </span><span 
+class="cmr-8">to avoid a name clash when using the </span><span 
+class="cmss-8">seminar</span><a 
+ id="dx1-9015"></a> <span 
+class="cmr-8">class file.</span></p>
+<!--l. 356--><p class="indent" >     <span class="footnote-mark"><a 
+href="#fn4x0-bk" id="fn4x0"><sup class="textsuperscript">4</sup></a></span><span 
+class="cmr-8">To be more precise, </span><span 
+class="cmtt-8">\today</span><a 
+ id="dx1-9019"></a> <span 
+class="cmr-8">is defined to be </span><span 
+class="cmtt-8">\formatdate</span><a 
+ id="dx1-9020"></a><span 
+class="cmsy-8">{</span><span 
+class="cmtt-8">\day</span><span 
+class="cmsy-8">}{</span><span 
+class="cmtt-8">\month</span><span 
+class="cmsy-8">}{</span><span 
+class="cmtt-8">\year</span><span 
+class="cmsy-8">} </span><span 
+class="cmr-8">where</span>
+<span 
+class="cmtt-8">\longdate</span><a 
+ id="dx1-9021"></a> <span 
+class="cmr-8">etc change the definition of </span><span 
+class="cmtt-8">\formatdate</span></p>
+<!--l. 434--><p class="indent" >    <span class="footnote-mark"><a 
+href="#fn5x0-bk" id="fn5x0"><sup class="textsuperscript">5</sup></a></span><span 
+class="cmr-8">Thanks to Denis Bitouz</span><span 
+class="cmr-8">é for asking about this</span></p>
+<!--l. 589--><p class="indent" >     <span class="footnote-mark"><a 
+href="#fn6x0-bk" id="fn6x0"><sup class="textsuperscript">6</sup></a></span><span 
+class="cmr-8">thanks to Uwe Bieling for supplying the German names</span></p>                                         </div>
+ 
+</body></html> 
+
+                                                                    
+
+

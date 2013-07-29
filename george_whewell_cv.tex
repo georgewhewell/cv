@@ -1,0 +1,124 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[margin, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+
+\usepackage{datetime}
+
+\newdateformat{currentmonthyear}{\monthname[\THEMONTH] \THEYEAR}
+
+\usepackage{helvet} % Default font is the helvetica postscript font
+%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+
+\setlength{\textwidth}{5.1in} % Text width of the document
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+
+\moveleft.5\hoffset\centerline{\large\bf George Whewell} % Your name at the top
+ 
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
+\moveleft.5\hoffset\centerline{georgerw@gmail.com} % Your address
+\moveleft.5\hoffset\centerline{96 Crofton Rd} % Your address
+\moveleft.5\hoffset\centerline{London, UK SE5 8NA}
+\moveleft.5\hoffset\centerline{(+44) 7734-009235}
+
+%----------------------------------------------------------------------------------------
+
+\begin{resume}
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE SECTION
+%----------------------------------------------------------------------------------------
+ 
+\section{}
+
+Experienced software engineer with a wide range of skills. Passion for learning new technologies and and finding innovative and efficient solutions to problems.
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{DEGREE}
+
+{\sl Bachelor of Science, Second class honours, upper division} \\
+Physics and Astronomy \\
+University College London, graduated June 2011
+ 
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{COMPUTER \\ SKILLS} 
+
+{\sl Languages \& Packages:} 
+Python (incl. SciPy, Numpy), Erlang, Java, Javascript, Visual Basic.
+
+{\sl Software \& Frameworks:} 
+SQL (MySQL, PostgreSQL) \& NoSQL (GAE Datastore, Mongodb) databases, Google App Engine, Amazon AWS, Django, Tornado, RabbitMQ, Elasticsearch, Varnish, Apache, nginx.
+
+{\sl Operating Systems:} Linux, OS X, Windows
+ 
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+ 
+\section{EXPERIENCE}
+
+{\sl Senior Backend Developer} \hfill August 2011 --- \currentmonthyear\today \\
+Beyond Digital --- London/San Francisco \\
+
+\begin{itemize} \itemsep -2pt % Reduce space between items
+\item Spent eight months in San Fransico supporting digital creative team as first US backend team member
+\item Supported YouTube \textit{Carnaval} Project in Salvador, Brazil by coordinating work with London team and implementing post-launch adjustments
+\item Built highly-scalable web applications using Python on Google App Engine capable of scaling
+to hundreds of thousands of concurrent users within minutes
+\item Architected and implemented backend systems for Virgin.com with a real-time content recommendation engine.
+\item Developed scalable queue-based video encoding backend on Amazon AWS platform
+\item Developed second-screen presentation platform allowing audience members to follow a presentation on their mobile device in real-time for high-profile sales event
+\end{itemize}
+
+{\sl Product Validation Team} \hfill (Internship) June 2010 --- October 2010 \\
+Icera Semiconductor Inc (now \textit{Nvidia}) --- Bristol, UK \\
+\begin{itemize} 
+\item Performed and developed performance regression and functional tests for mobile chipset firmwares
+\item Automated test suite, from uploading new firmwares to producing reports and charts
+\item Documented and filed detailed bug reports, obtained core dumps and tracebacks for bugs
+\end{itemize} 
+\clearpage
+{\sl Developer} \hfill (Non-staff) June 2008 --- October 2009 \\
+Jomoto Industrial Automation Inc. --- Coventry, UK \\
+\begin{itemize}
+\item Fixed bugs in Visual Basic industrial automation package for building pre-fabricated houses
+\item Added new outputs showing additional information for display on factory floor
+\end{itemize} 
+
+%----------------------------------------------------------------------------------------
+%	COMMUNITY SERVICE SECTION
+%---------------------------------------------------------------------------------------- 
+
+\section{EDUCATION}
+
+{\sl University College London} \\
+\begin{itemize} \itemsep -2pt % Reduce space between items
+\item Achieved 2:1 degree class in Physics and Astronomy, scoring especially well in technology-related modules (93\% in Scientific Computing using Object Oriented Languages)
+\item Wrote a passenger simulation for abitrary urban transit systems in order to model congestion as my contribution to a group project
+\item Implemented Inverse Abel Transform image pipeline in Scipy/Numpy to reconstruct 3-D experiments from 2-D projection as part of tutored research
+\end{itemize}
+
+{\sl King Henry VIII School} \\
+\begin{itemize} 
+\item A-levels in Maths, Economics, Computing, Physics
+\item 9 A-grade GCSEs
+\end{itemize} 
+
+\section{REFERENCES}
+Available on request
+
+
+\end{resume}
+\end{document}
