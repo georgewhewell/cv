@@ -1,4 +1,7 @@
+.DS_STORE
+.vagrant
 *.acn
+*.log
 *.acr
 *.alg
 *.aux
