@@ -1,6 +1,6 @@
-all: george_whewell_cv.pdf 
+all: george_whewell_cv.pdf
 
-george_whewell_cv.pdf:
+george_whewell_cv.pdf: deps
 	xelatex george_whewell_cv.tex
 
 deps:
