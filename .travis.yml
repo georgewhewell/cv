@@ -1,0 +1,16 @@
+ # .travis.yml
+
+sudo: required
+services:
+  - docker
+
+script:
+  - bash build.sh
+
+after_success:
+  - bash deploy.sh
+
+env:
+  global:
+    - GITHUB_REPO: "georgewhewell/cv"
+    - secure: "LQ6Qt6fJa2gwQwFX834WfDOwytfTARu32Bu/TiH+/2v+nzhM6l95+Rgzuw5yxB5n5hew65IDgtju0XhzhgTfpFiishtZy4WEvtudqnz90tevvl5xEa07OrUBnsxi1e7BidzvCjQFj79rv1qlXKQRHy74tEnBMTdRNxdV2YYNcWM="
