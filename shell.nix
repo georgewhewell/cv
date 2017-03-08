@@ -8,6 +8,11 @@ let
      psnfss
      amsmath
      fmtcount
+     hyperref
+     url
+     oberdiek
+     metafont
+     zapfding
      collection-xetex;
      inherit res;
   });
