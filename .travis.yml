@@ -1,11 +1,10 @@
  # .travis.yml
-
 sudo: required
 services:
   - docker
 
 script:
-  - ./build.sh
+  - nix-build -o output
 
 after_success:
   - ./deploy.sh
