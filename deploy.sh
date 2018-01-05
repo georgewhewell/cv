@@ -17,6 +17,9 @@ git remote add upstream "https://$GITHUB_TOKEN@github.com/georgewhewell/cv.git"
 git fetch upstream
 git reset upstream/gh-pages
 
+rm george_whewell_cv.pdf
+cp $1/george_whewell_cv.pdf ./
+
 git add george_whewell_cv.pdf
 git commit -m "rebuild pages at ${rev}"
 git push -q upstream HEAD:gh-pages

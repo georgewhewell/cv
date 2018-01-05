@@ -1,13 +1,6 @@
- # .travis.yml
-sudo: required
-services:
-  - docker
-
-script:
-  - nix-build -o output
-
-after_success:
-  - ./deploy.sh
+language: nix
+script: nix-build default.nix -o output
+after_success: ./deploy.sh output
 
 env:
   global:
