@@ -15,7 +15,7 @@ git config user.email "georgerw@gmail.com"
 
 git remote add upstream "https://$GITHUB_TOKEN@github.com/georgewhewell/cv.git"
 git fetch upstream
-git reset upstream/gh-pages
+git checkout gh-pages
 
 rm george_whewell_cv.pdf
 cp $1/george_whewell_cv.pdf ./
