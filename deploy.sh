@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -o errexit -o nounset
+set -euxo pipefail
 
 if [ "$TRAVIS_BRANCH" != "master" ]
 then
