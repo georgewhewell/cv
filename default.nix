@@ -38,6 +38,8 @@ in {
            collection-xetex
            lm
            etoolbox
+           hycolor
+           atveryend
            xkeyval;
          resume.pkgs = [resume];
       })

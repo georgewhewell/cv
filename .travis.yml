@@ -1,5 +1,5 @@
 language: nix
-script: nix-build default.nix -o output
+script: nix-build -I nixpkgs=channel:nixos-20.03 default.nix -o output
 after_success: ./deploy.sh output
 
 env:
