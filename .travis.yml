@@ -1,8 +1,0 @@
-language: nix
-script: nix-build -I nixpkgs=channel:nixos-20.03 default.nix -o output
-after_success: ./deploy.sh output
-
-env:
-  global:
-    - GITHUB_REPO: "georgewhewell/cv"
-    - secure: "LQ6Qt6fJa2gwQwFX834WfDOwytfTARu32Bu/TiH+/2v+nzhM6l95+Rgzuw5yxB5n5hew65IDgtju0XhzhgTfpFiishtZy4WEvtudqnz90tevvl5xEa07OrUBnsxi1e7BidzvCjQFj79rv1qlXKQRHy74tEnBMTdRNxdV2YYNcWM="
